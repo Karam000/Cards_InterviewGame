@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &91887893
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +273,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 942547317}
+  - {fileID: 348344877}
   m_Father: {fileID: 1975692391}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &91887895
@@ -283,10 +285,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 91887893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e097d968eb643a247ad43c4f15cd154a, type: 3}
+  m_Script: {fileID: 11500000, guid: 70238dd9de59fe547b9c6a6d37e26ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myCardsParent: {fileID: 942547317}
+  playedCardsPosition: {fileID: 348344877}
 --- !u!1 &166399573
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &186779165
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &204865156
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &208671499
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +769,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
+--- !u!1 &236993563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 236993564}
+  m_Layer: 0
+  m_Name: card play pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &236993564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236993563}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2069980467}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &311795059
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +920,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
+--- !u!1 &348344876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 348344877}
+  m_Layer: 0
+  m_Name: card play pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &348344877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348344876}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 91887894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &399764785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,6 +1071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &515537939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,6 +1103,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1264813499}
+  - {fileID: 2100979621}
   m_Father: {fileID: 1975692391}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &515537941
@@ -1043,10 +1115,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 515537939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e097d968eb643a247ad43c4f15cd154a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fcacb3dc36de6446ba936d91e44b94e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myCardsParent: {fileID: 1264813499}
+  playedCardsPosition: {fileID: 2100979621}
 --- !u!1 &543607888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,6 +1239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &545814863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,6 +1359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &631496850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,6 +1479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &631727573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &650216995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,6 +1719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &657937748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,6 +1839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +2053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &842033651
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &871815306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,6 +2293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &874323424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2377,6 +2459,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
+--- !u!1 &913133423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 913133424}
+  m_Layer: 0
+  m_Name: card play pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &913133424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913133423}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1954204215}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936383785
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,6 +2610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &942547316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,6 +2761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &953490473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2871,6 +2987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &956947783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2990,6 +3107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,7 +3194,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -1, y: 11.828636, z: 0.057793114}
+  m_LocalPosition: {x: 0, y: 11.828636, z: 0.057793114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3201,6 +3319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1025568356
 GameObject:
   m_ObjectHideFlags: 0
@@ -3351,6 +3470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1167452157
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,6 +3673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1232542434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3672,6 +3793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1243760024
 GameObject:
   m_ObjectHideFlags: 0
@@ -3791,6 +3913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1264813498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3941,6 +4064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1317048042
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,6 +4184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1317239305
 GameObject:
   m_ObjectHideFlags: 0
@@ -4210,6 +4335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1446166159
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,6 +4369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!65 &1446166161
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4448,6 +4575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1514599310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4567,6 +4695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1538052773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4686,6 +4815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1546378395
 GameObject:
   m_ObjectHideFlags: 0
@@ -4805,6 +4935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1568058954
 GameObject:
   m_ObjectHideFlags: 0
@@ -4924,6 +5055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1648837916
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,6 +5175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1672806608
 GameObject:
   m_ObjectHideFlags: 0
@@ -5162,6 +5295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1723510536
 GameObject:
   m_ObjectHideFlags: 0
@@ -5281,6 +5415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1757537685
 GameObject:
   m_ObjectHideFlags: 0
@@ -5400,6 +5535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1785128104
 GameObject:
   m_ObjectHideFlags: 0
@@ -5519,6 +5655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1839869084
 GameObject:
   m_ObjectHideFlags: 0
@@ -5736,6 +5873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1845988973
 GameObject:
   m_ObjectHideFlags: 0
@@ -5855,6 +5993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1875469277
 GameObject:
   m_ObjectHideFlags: 0
@@ -5974,6 +6113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1954204214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6005,6 +6145,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1317239306}
+  - {fileID: 913133424}
   m_Father: {fileID: 1975692391}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1954204216
@@ -6016,10 +6157,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1954204214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e097d968eb643a247ad43c4f15cd154a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fcacb3dc36de6446ba936d91e44b94e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myCardsParent: {fileID: 1317239306}
+  playedCardsPosition: {fileID: 913133424}
 --- !u!1 &1960117146
 GameObject:
   m_ObjectHideFlags: 0
@@ -6139,6 +6281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &1975692390
 GameObject:
   m_ObjectHideFlags: 0
@@ -6293,6 +6436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &2022784016
 GameObject:
   m_ObjectHideFlags: 0
@@ -6326,7 +6470,7 @@ MonoBehaviour:
   - {fileID: 91887895}
   - {fileID: 515537941}
   - {fileID: 1954204216}
-  - {fileID: 2069980466}
+  - {fileID: 2069980468}
   dealingSpeed: 0.1
 --- !u!4 &2022784018
 Transform:
@@ -6462,6 +6606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &2040853472
 GameObject:
   m_ObjectHideFlags: 0
@@ -6581,6 +6726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &2043585959
 GameObject:
   m_ObjectHideFlags: 0
@@ -6700,6 +6846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &2069980465
 GameObject:
   m_ObjectHideFlags: 0
@@ -6709,7 +6856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2069980467}
-  - component: {fileID: 2069980466}
+  - component: {fileID: 2069980468}
   m_Layer: 0
   m_Name: NPC player 3
   m_TagString: Untagged
@@ -6717,19 +6864,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2069980466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069980465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e097d968eb643a247ad43c4f15cd154a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myCardsParent: {fileID: 1025568357}
 --- !u!4 &2069980467
 Transform:
   m_ObjectHideFlags: 0
@@ -6744,7 +6878,53 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1025568357}
+  - {fileID: 236993564}
   m_Father: {fileID: 1975692391}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2069980468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069980465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcacb3dc36de6446ba936d91e44b94e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCardsParent: {fileID: 1025568357}
+  playedCardsPosition: {fileID: 236993564}
+--- !u!1 &2100979620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2100979621}
+  m_Layer: 0
+  m_Name: 'card play pos '
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2100979621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100979620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 515537940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2112113616
 GameObject:
@@ -6865,6 +7045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &2117432327
 GameObject:
   m_ObjectHideFlags: 0
@@ -6984,6 +7165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &2121121425
 GameObject:
   m_ObjectHideFlags: 0
@@ -7103,6 +7285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1 &2145355142
 GameObject:
   m_ObjectHideFlags: 0
@@ -7222,6 +7405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
+  cardValue: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

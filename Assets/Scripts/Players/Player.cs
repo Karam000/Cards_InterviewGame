@@ -6,8 +6,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] Transform myCardsParent;
-    Stack<Card> myCards = new();
-
+    [SerializeField] protected Transform playedCardsPosition;
+    protected Stack<Card> myCards = new();
+    protected Card maxCard;
     public void AddCard(Card card)
     {
         myCards.Push(card);
@@ -16,9 +17,12 @@ public class Player : MonoBehaviour
 
         card.transform.parent = myCardsParent;
         myCardsParent.transform.DOMove(myCardsParent.transform.position - Vector3.forward * 0.2f, 0.08f); //to keep cards centered
+        
+        if(maxCard == null || card.cardValue > maxCard.cardValue)
+            maxCard = card;
     }
 
-    public void PlayCard()
+    public virtual void PlayCard(Card card)
     {
 
     }
