@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UserPlayer : Player
 {
-    public override void PlayCard(Card card)
+    public override void PlayCard(Card card = null)
     {
         card.PlayCard(playedCardsPosition);
     }

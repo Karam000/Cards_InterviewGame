@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPCPlayer : Player
 {
-    public override void PlayCard(Card card)
+    public override void PlayCard(Card card = null)
     {
         maxCard.PlayCard(playedCardsPosition);
     }

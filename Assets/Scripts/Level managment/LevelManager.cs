@@ -11,5 +11,10 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(Dealer.DealCards(Deck));
     }
 
+    private void LevelSequence()
+    {
+
+    }
+
     
 }

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public abstract class Player : MonoBehaviour
 {
     [SerializeField] Transform myCardsParent;
     [SerializeField] protected Transform playedCardsPosition;
@@ -22,8 +22,5 @@ public class Player : MonoBehaviour
             maxCard = card;
     }
 
-    public virtual void PlayCard(Card card)
-    {
-
-    }
+    public abstract void PlayCard(Card card = null);
 }
