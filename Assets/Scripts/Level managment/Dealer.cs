@@ -8,11 +8,11 @@ public class Dealer : MonoBehaviour
     
     public IEnumerator DealCards(Deck deck)
     {
-        PlayersManager.Instance.SetFirstPlayer(); 
+        PlayersManager.Instance.RandomizeFirstPlayer(); 
         int i = 0;
         while (deck.Cards.Count > 0)
         {
-            PlayersManager.Instance.GetPlayerByIndex(i).AddCard(deck.GetTopCard()); //deal cards (card by card from the deck) in ccw order
+            PlayersManager.Instance.GetPlayerCCW(i).AddCardToHand(deck.PopCard()); //deal cards (card by card from the deck) in ccw order
             yield return new WaitForSeconds(dealingDelay);
             i++;
         }

@@ -6,11 +6,8 @@ public class PlayersManager : MonoBehaviour
 {
     [SerializeField] List<Player> Players;
 
-    public Player FirstPlayer => Players[startingPlayerId];
-
     private Player currentPlayer;
     private int currentPlayerId;
-
     private int startingPlayerId;
 
     public static PlayersManager Instance;
@@ -22,20 +19,33 @@ public class PlayersManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void SetFirstPlayer()
+    public void RandomizeFirstPlayer()
     {
         startingPlayerId = Random.Range(0, Players.Count); //exclusive so will be max: count-1
         currentPlayer = Players[startingPlayerId];
     }
 
-    public Player GetPlayerByIndex(int index)
+    public Player GetPlayerCCW(int index)
     {
         return Players[(startingPlayerId + index) % Players.Count];
     }
 
-    public void SetCurrentPlayer()
+    public void OnNewTurn(bool isFirstTurn)
     {
-        currentPlayer = Players[currentPlayerId];
+        if(!isFirstTurn) 
+            UpdateCurrentPlayer();
+
+        PlayCurrentTurn();
     }
-    
+    private void UpdateCurrentPlayer()
+    {
+        currentPlayer = Players[currentPlayerId++ % Players.Count];
+        //visual for current player
+    }
+
+    public void PlayCurrentTurn()
+    {
+        if(currentPlayer is NPCPlayer) 
+        currentPlayer.PlayTurn();
+    }
 }

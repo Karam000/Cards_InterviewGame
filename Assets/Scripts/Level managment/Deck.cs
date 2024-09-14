@@ -15,7 +15,7 @@ public class Deck : MonoBehaviour
         }
     }
 
-    public Card GetTopCard() => Cards.Pop();
+    public Card PopCard() => Cards.Pop();
    
     public void ShuffleCardS()
     {
