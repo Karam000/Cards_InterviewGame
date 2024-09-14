@@ -8,7 +8,7 @@ public class NPCPlayer : Player
     {
         base.AddCardToHand(card);
 
-        maxCard = CardRanker.Instance.GetMaxCard(myCards);
+        maxCard = CardsManager.Instance.GetMaxCard(myCards);
     }
     public override void PlayTurn(Card card = null)
     {

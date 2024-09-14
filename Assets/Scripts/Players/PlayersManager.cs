@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayersManager : MonoBehaviour
+public class PlayersManager : MonoBehaviour, IObserver<StartTurnCommand>, IObserver<EndTurnCommand>
 {
     [SerializeField] List<Player> Players;
 
@@ -19,9 +19,10 @@ public class PlayersManager : MonoBehaviour
             Destroy(gameObject);
     }
 
+    #region Utility for Dealing
     public void RandomizeFirstPlayer()
     {
-        startingPlayerId = Random.Range(0, Players.Count); //exclusive so will be max: count-1
+        startingPlayerId = 0; //just for testing// Random.Range(0, Players.Count); //exclusive so will be max: count-1
         currentPlayer = Players[startingPlayerId];
     }
 
@@ -30,22 +31,29 @@ public class PlayersManager : MonoBehaviour
         return Players[(startingPlayerId + index) % Players.Count];
     }
 
-    public void OnNewTurn(bool isFirstTurn)
-    {
-        if(!isFirstTurn) 
-            UpdateCurrentPlayer();
+    #endregion
 
+    public void OnNotify(StartTurnCommand startTurnCommand)
+    {
         PlayCurrentTurn();
     }
+
+    public void OnNotify(EndTurnCommand endTurnCommand)
+    {
+        UpdateCurrentPlayer();
+    }
+
     private void UpdateCurrentPlayer()
     {
-        currentPlayer = Players[currentPlayerId++ % Players.Count];
+        currentPlayer = Players[(++currentPlayerId) % Players.Count];
         //visual for current player
     }
 
-    public void PlayCurrentTurn()
+    private void PlayCurrentTurn()
     {
         if(currentPlayer is NPCPlayer) 
         currentPlayer.PlayTurn();
     }
+
+    
 }

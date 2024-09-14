@@ -1,4 +1,4 @@
-public enum Suits
+public enum CardSuits
 {
     clubs,
     diamonds,

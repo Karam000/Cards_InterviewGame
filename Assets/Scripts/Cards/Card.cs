@@ -20,7 +20,7 @@ public class Card : MonoBehaviour
     public void PlayCard(Transform playPos)
     {
         this.transform.DOMove(playPos.position, movementDuration); //here we should be notified abt turn end
-        CardRanker.Instance.AddCardToGround(this);
+        CardsManager.Instance.AddCardToGround(this);
     }
 
     private void MoveToPlayerHand(Player player, int index)
@@ -40,5 +40,5 @@ public class Card : MonoBehaviour
 public class CardData
 {
     public CardNumber CardNumber;
-    public Suits CardSuit;
+    public CardSuits CardSuit;
 }

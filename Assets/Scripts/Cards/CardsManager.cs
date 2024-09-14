@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class CardRanker : MonoBehaviour
+public class CardsManager : MonoBehaviour
 {
+    EndTurnCommand EndTurnCommand = new();
     List<Card> GroundCards = new();
 
-    public static CardRanker Instance;
+    public static CardsManager Instance;
 
     private void Awake()
     {
@@ -16,10 +17,15 @@ public class CardRanker : MonoBehaviour
         else
             Destroy(gameObject);
     }
-
-    public void AddCardToGround(Card card) //we need an observer for when a card is played and when is done playing, so many listeners in these two instances
+    private void Start()
+    {
+        EndTurnCommand.AddObserver(PlayersManager.Instance);    
+        EndTurnCommand.AddObserver(RoundManager.Instance);
+    }
+    public void AddCardToGround(Card card)
     {
         GroundCards.Add(card);
+        EndTurnCommand.Execute(EndTurnCommand);
     }
 
     public Card GetMaxPlayedCard()
@@ -40,7 +46,4 @@ public class CardRanker : MonoBehaviour
                            
         cards = orderedCards.ToList();
     }
-
-
-    
 }

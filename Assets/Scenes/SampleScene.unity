@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 19927032}
   - component: {fileID: 19927035}
   m_Layer: 0
-  m_Name: card (4)
+  m_Name: clubs ten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,7 +241,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 8
+    CardSuit: 0
 --- !u!1 &91887893
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +306,7 @@ GameObject:
   - component: {fileID: 166399575}
   - component: {fileID: 166399578}
   m_Layer: 0
-  m_Name: card (24)
+  m_Name: diamonds four
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -409,7 +411,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 2
+    CardSuit: 1
 --- !u!1 &186779165
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +428,7 @@ GameObject:
   - component: {fileID: 186779167}
   - component: {fileID: 186779170}
   m_Layer: 0
-  m_Name: card (50)
+  m_Name: spades queen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -529,7 +533,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 10
+    CardSuit: 3
 --- !u!1 &204865156
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +550,7 @@ GameObject:
   - component: {fileID: 204865158}
   - component: {fileID: 204865161}
   m_Layer: 0
-  m_Name: card (30)
+  m_Name: hearts eight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,7 +655,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 6
+    CardSuit: 2
 --- !u!1 &208671499
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,7 +672,7 @@ GameObject:
   - component: {fileID: 208671501}
   - component: {fileID: 208671504}
   m_Layer: 0
-  m_Name: card (32)
+  m_Name: spades three
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -769,7 +777,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 1
+    CardSuit: 3
 --- !u!1 &236993563
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,7 +805,7 @@ Transform:
   m_GameObject: {fileID: 236993563}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 2.08, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -815,7 +825,7 @@ GameObject:
   - component: {fileID: 311795061}
   - component: {fileID: 311795064}
   m_Layer: 0
-  m_Name: card (47)
+  m_Name: spades six
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -920,7 +930,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 4
+    CardSuit: 3
 --- !u!1 &348344876
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,7 +978,7 @@ GameObject:
   - component: {fileID: 399764787}
   - component: {fileID: 399764790}
   m_Layer: 0
-  m_Name: card (25)
+  m_Name: diamonds six
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1071,7 +1083,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 4
+    CardSuit: 1
 --- !u!1 &515537939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,7 +1148,7 @@ GameObject:
   - component: {fileID: 543607890}
   - component: {fileID: 543607893}
   m_Layer: 0
-  m_Name: card (45)
+  m_Name: spades king
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1239,7 +1253,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 11
+    CardSuit: 3
 --- !u!1 &545814863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1270,7 @@ GameObject:
   - component: {fileID: 545814865}
   - component: {fileID: 545814868}
   m_Layer: 0
-  m_Name: card (35)
+  m_Name: diamonds ace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1359,7 +1375,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 12
+    CardSuit: 1
 --- !u!1 &631496850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,7 +1392,7 @@ GameObject:
   - component: {fileID: 631496852}
   - component: {fileID: 631496855}
   m_Layer: 0
-  m_Name: card (9)
+  m_Name: diamonds seven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,7 +1497,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 5
+    CardSuit: 1
 --- !u!1 &631727573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,7 +1514,7 @@ GameObject:
   - component: {fileID: 631727575}
   - component: {fileID: 631727578}
   m_Layer: 0
-  m_Name: card (14)
+  m_Name: hearts ten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1599,7 +1619,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 8
+    CardSuit: 2
 --- !u!1 &650216995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,7 +1636,7 @@ GameObject:
   - component: {fileID: 650216997}
   - component: {fileID: 650217000}
   m_Layer: 0
-  m_Name: card (13)
+  m_Name: hearts six
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1719,7 +1741,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 4
+    CardSuit: 2
 --- !u!1 &657937748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,7 +1758,7 @@ GameObject:
   - component: {fileID: 657937750}
   - component: {fileID: 657937753}
   m_Layer: 0
-  m_Name: card (34)
+  m_Name: diamonds queen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1839,7 +1863,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 10
+    CardSuit: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,6 +1960,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &751863570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 751863572}
+  - component: {fileID: 751863571}
+  m_Layer: 0
+  m_Name: Card data filler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &751863571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751863570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a845862d64b8e2445b7ccd674ecf75db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards:
+  - {fileID: 771295483}
+  - {fileID: 2145355147}
+  - {fileID: 1538052778}
+  - {fileID: 1568058959}
+  - {fileID: 1845988978}
+  - {fileID: 1875469282}
+  - {fileID: 956820351}
+  - {fileID: 1723510541}
+  - {fileID: 19927035}
+  - {fileID: 1990461317}
+  - {fileID: 1844859540}
+  - {fileID: 1757537690}
+  - {fileID: 956947788}
+  - {fileID: 1002705317}
+  - {fileID: 871815311}
+  - {fileID: 166399578}
+  - {fileID: 1546378400}
+  - {fileID: 399764790}
+  - {fileID: 631496855}
+  - {fileID: 2117432332}
+  - {fileID: 1672806613}
+  - {fileID: 1461500881}
+  - {fileID: 884862490}
+  - {fileID: 657937753}
+  - {fileID: 1304376408}
+  - {fileID: 545814868}
+  - {fileID: 2121121430}
+  - {fileID: 1421335231}
+  - {fileID: 1514599315}
+  - {fileID: 2040853477}
+  - {fileID: 650217000}
+  - {fileID: 945210678}
+  - {fileID: 204865161}
+  - {fileID: 2112113621}
+  - {fileID: 631727578}
+  - {fileID: 2025426387}
+  - {fileID: 1232542439}
+  - {fileID: 1158918405}
+  - {fileID: 1785128109}
+  - {fileID: 842033656}
+  - {fileID: 208671504}
+  - {fileID: 1187853035}
+  - {fileID: 1243760029}
+  - {fileID: 311795064}
+  - {fileID: 1317048047}
+  - {fileID: 2043585964}
+  - {fileID: 1648837921}
+  - {fileID: 1960117151}
+  - {fileID: 936383790}
+  - {fileID: 186779170}
+  - {fileID: 543607893}
+  - {fileID: 1446166160}
+--- !u!4 &751863572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751863570}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.0979998, y: -10.506873, z: -2.8893843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &771295478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,7 +2071,7 @@ GameObject:
   - component: {fileID: 771295480}
   - component: {fileID: 771295483}
   m_Layer: 0
-  m_Name: card
+  m_Name: clubs two
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2053,7 +2176,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 0
+    CardSuit: 0
+--- !u!1 &816866806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 816866808}
+  - component: {fileID: 816866807}
+  m_Layer: 0
+  m_Name: Round manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &816866807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816866806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92de067122d8d624eb09322d8dabedf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &816866808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816866806}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.0979998, y: -10.506873, z: -2.8893843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &842033651
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,7 +2237,7 @@ GameObject:
   - component: {fileID: 842033653}
   - component: {fileID: 842033656}
   m_Layer: 0
-  m_Name: card (42)
+  m_Name: spades two
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2173,7 +2342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 0
+    CardSuit: 3
 --- !u!1 &871815306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,7 +2359,7 @@ GameObject:
   - component: {fileID: 871815308}
   - component: {fileID: 871815311}
   m_Layer: 0
-  m_Name: card (7)
+  m_Name: diamonds three
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2293,7 +2464,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 1
+    CardSuit: 1
 --- !u!1 &874323424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,7 +2527,7 @@ GameObject:
   - component: {fileID: 884862487}
   - component: {fileID: 884862490}
   m_Layer: 0
-  m_Name: card (11)
+  m_Name: diamonds jack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2459,7 +2632,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 9
+    CardSuit: 1
 --- !u!1 &913133423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2505,7 +2680,7 @@ GameObject:
   - component: {fileID: 936383787}
   - component: {fileID: 936383790}
   m_Layer: 0
-  m_Name: card (33)
+  m_Name: spades jack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2610,7 +2785,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 9
+    CardSuit: 3
 --- !u!1 &942547316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,7 +2833,7 @@ GameObject:
   - component: {fileID: 945210675}
   - component: {fileID: 945210678}
   m_Layer: 0
-  m_Name: card (38)
+  m_Name: hearts seven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2761,7 +2938,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 5
+    CardSuit: 2
 --- !u!1 &953490473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +2953,7 @@ GameObject:
   - component: {fileID: 953490476}
   - component: {fileID: 953490475}
   - component: {fileID: 953490474}
+  - component: {fileID: 953490478}
   m_Layer: 0
   m_Name: Playground
   m_TagString: Untagged
@@ -2868,6 +3048,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &953490478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953490473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1176f64e316d22c428d8c15fb8ac6906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &956820346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,7 +3074,7 @@ GameObject:
   - component: {fileID: 956820348}
   - component: {fileID: 956820351}
   m_Layer: 0
-  m_Name: card (3)
+  m_Name: clubs eight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2987,7 +3179,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 6
+    CardSuit: 0
 --- !u!1 &956947783
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,7 +3196,7 @@ GameObject:
   - component: {fileID: 956947785}
   - component: {fileID: 956947788}
   m_Layer: 0
-  m_Name: card (6)
+  m_Name: clubs ace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3107,7 +3301,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 12
+    CardSuit: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3214,7 +3410,7 @@ GameObject:
   - component: {fileID: 1002705314}
   - component: {fileID: 1002705317}
   m_Layer: 0
-  m_Name: card (23)
+  m_Name: diamonds two
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3319,7 +3515,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 0
+    CardSuit: 1
 --- !u!1 &1025568356
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,7 +3563,7 @@ GameObject:
   - component: {fileID: 1158918402}
   - component: {fileID: 1158918405}
   m_Layer: 0
-  m_Name: card (41)
+  m_Name: hearts king
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3470,7 +3668,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 11
+    CardSuit: 2
 --- !u!1 &1167452157
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,7 +3768,7 @@ GameObject:
   - component: {fileID: 1187853032}
   - component: {fileID: 1187853035}
   m_Layer: 0
-  m_Name: card (46)
+  m_Name: spades four
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3673,7 +3873,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 2
+    CardSuit: 3
 --- !u!1 &1232542434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,7 +3890,7 @@ GameObject:
   - component: {fileID: 1232542436}
   - component: {fileID: 1232542439}
   m_Layer: 0
-  m_Name: card (31)
+  m_Name: hearts queen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3793,7 +3995,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 10
+    CardSuit: 2
 --- !u!1 &1243760024
 GameObject:
   m_ObjectHideFlags: 0
@@ -3808,7 +4012,7 @@ GameObject:
   - component: {fileID: 1243760026}
   - component: {fileID: 1243760029}
   m_Layer: 0
-  m_Name: card (43)
+  m_Name: spades five
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3913,7 +4117,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 3
+    CardSuit: 3
 --- !u!1 &1264813498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3959,7 +4165,7 @@ GameObject:
   - component: {fileID: 1304376405}
   - component: {fileID: 1304376408}
   m_Layer: 0
-  m_Name: card (28)
+  m_Name: diamonds king
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4064,7 +4270,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 11
+    CardSuit: 1
 --- !u!1 &1317048042
 GameObject:
   m_ObjectHideFlags: 0
@@ -4079,7 +4287,7 @@ GameObject:
   - component: {fileID: 1317048044}
   - component: {fileID: 1317048047}
   m_Layer: 0
-  m_Name: card (16)
+  m_Name: spades seven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4184,7 +4392,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 5
+    CardSuit: 3
 --- !u!1 &1317239305
 GameObject:
   m_ObjectHideFlags: 0
@@ -4230,7 +4440,7 @@ GameObject:
   - component: {fileID: 1421335228}
   - component: {fileID: 1421335231}
   m_Layer: 0
-  m_Name: card (36)
+  m_Name: hearts three
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4335,7 +4545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 1
+    CardSuit: 2
 --- !u!1 &1446166159
 GameObject:
   m_ObjectHideFlags: 0
@@ -4350,7 +4562,7 @@ GameObject:
   - component: {fileID: 1446166161}
   - component: {fileID: 1446166160}
   m_Layer: 0
-  m_Name: card (51)
+  m_Name: spades ace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4369,7 +4581,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 12
+    CardSuit: 3
 --- !u!65 &1446166161
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4470,7 +4684,7 @@ GameObject:
   - component: {fileID: 1461500878}
   - component: {fileID: 1461500881}
   m_Layer: 0
-  m_Name: card (27)
+  m_Name: diamonds ten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4575,7 +4789,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 8
+    CardSuit: 1
 --- !u!1 &1514599310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4590,7 +4806,7 @@ GameObject:
   - component: {fileID: 1514599312}
   - component: {fileID: 1514599315}
   m_Layer: 0
-  m_Name: card (29)
+  m_Name: hearts four
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4695,7 +4911,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 2
+    CardSuit: 2
 --- !u!1 &1538052773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,7 +4928,7 @@ GameObject:
   - component: {fileID: 1538052775}
   - component: {fileID: 1538052778}
   m_Layer: 0
-  m_Name: card (1)
+  m_Name: clubs four
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4815,7 +5033,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 2
+    CardSuit: 0
 --- !u!1 &1546378395
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,7 +5050,7 @@ GameObject:
   - component: {fileID: 1546378397}
   - component: {fileID: 1546378400}
   m_Layer: 0
-  m_Name: card (8)
+  m_Name: diamonds five
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4935,7 +5155,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 3
+    CardSuit: 1
 --- !u!1 &1568058954
 GameObject:
   m_ObjectHideFlags: 0
@@ -4950,7 +5172,7 @@ GameObject:
   - component: {fileID: 1568058956}
   - component: {fileID: 1568058959}
   m_Layer: 0
-  m_Name: card (18)
+  m_Name: clubs five
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5055,7 +5277,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 3
+    CardSuit: 0
 --- !u!1 &1648837916
 GameObject:
   m_ObjectHideFlags: 0
@@ -5070,7 +5294,7 @@ GameObject:
   - component: {fileID: 1648837918}
   - component: {fileID: 1648837921}
   m_Layer: 0
-  m_Name: card (44)
+  m_Name: spades nine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5175,7 +5399,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 7
+    CardSuit: 3
 --- !u!1 &1672806608
 GameObject:
   m_ObjectHideFlags: 0
@@ -5190,7 +5416,7 @@ GameObject:
   - component: {fileID: 1672806610}
   - component: {fileID: 1672806613}
   m_Layer: 0
-  m_Name: card (10)
+  m_Name: diamonds nine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5295,7 +5521,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 7
+    CardSuit: 1
 --- !u!1 &1723510536
 GameObject:
   m_ObjectHideFlags: 0
@@ -5310,7 +5538,7 @@ GameObject:
   - component: {fileID: 1723510538}
   - component: {fileID: 1723510541}
   m_Layer: 0
-  m_Name: card (20)
+  m_Name: clubs nine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5415,7 +5643,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 7
+    CardSuit: 0
 --- !u!1 &1757537685
 GameObject:
   m_ObjectHideFlags: 0
@@ -5430,7 +5660,7 @@ GameObject:
   - component: {fileID: 1757537687}
   - component: {fileID: 1757537690}
   m_Layer: 0
-  m_Name: card (22)
+  m_Name: clubs king
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5535,7 +5765,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 11
+    CardSuit: 0
 --- !u!1 &1785128104
 GameObject:
   m_ObjectHideFlags: 0
@@ -5550,7 +5782,7 @@ GameObject:
   - component: {fileID: 1785128106}
   - component: {fileID: 1785128109}
   m_Layer: 0
-  m_Name: card (15)
+  m_Name: hearts ace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5655,7 +5887,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 12
+    CardSuit: 2
 --- !u!1 &1839869084
 GameObject:
   m_ObjectHideFlags: 0
@@ -5768,7 +6002,7 @@ GameObject:
   - component: {fileID: 1844859537}
   - component: {fileID: 1844859540}
   m_Layer: 0
-  m_Name: card (5)
+  m_Name: clubs queen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5873,7 +6107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 10
+    CardSuit: 0
 --- !u!1 &1845988973
 GameObject:
   m_ObjectHideFlags: 0
@@ -5888,7 +6124,7 @@ GameObject:
   - component: {fileID: 1845988975}
   - component: {fileID: 1845988978}
   m_Layer: 0
-  m_Name: card (2)
+  m_Name: clubs six
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5993,7 +6229,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 4
+    CardSuit: 0
 --- !u!1 &1875469277
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,7 +6246,7 @@ GameObject:
   - component: {fileID: 1875469279}
   - component: {fileID: 1875469282}
   m_Layer: 0
-  m_Name: card (19)
+  m_Name: clubs seven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6113,7 +6351,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 5
+    CardSuit: 0
 --- !u!1 &1954204214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6176,7 +6416,7 @@ GameObject:
   - component: {fileID: 1960117148}
   - component: {fileID: 1960117151}
   m_Layer: 0
-  m_Name: card (49)
+  m_Name: spades ten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6281,7 +6521,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 8
+    CardSuit: 3
 --- !u!1 &1975692390
 GameObject:
   m_ObjectHideFlags: 0
@@ -6349,7 +6591,7 @@ GameObject:
   - component: {fileID: 1990461314}
   - component: {fileID: 1990461317}
   m_Layer: 0
-  m_Name: card (21)
+  m_Name: clubs jack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6454,7 +6696,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 9
+    CardSuit: 0
 --- !u!1 &2022784016
 GameObject:
   m_ObjectHideFlags: 0
@@ -6514,7 +6758,7 @@ GameObject:
   - component: {fileID: 2025426384}
   - component: {fileID: 2025426387}
   m_Layer: 0
-  m_Name: card (40)
+  m_Name: hearts jack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6619,7 +6863,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 9
+    CardSuit: 2
 --- !u!1 &2040853472
 GameObject:
   m_ObjectHideFlags: 0
@@ -6634,7 +6880,7 @@ GameObject:
   - component: {fileID: 2040853474}
   - component: {fileID: 2040853477}
   m_Layer: 0
-  m_Name: card (37)
+  m_Name: hearts five
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6739,7 +6985,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 3
+    CardSuit: 2
 --- !u!1 &2043585959
 GameObject:
   m_ObjectHideFlags: 0
@@ -6754,7 +7002,7 @@ GameObject:
   - component: {fileID: 2043585961}
   - component: {fileID: 2043585964}
   m_Layer: 0
-  m_Name: card (48)
+  m_Name: spades eight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6859,7 +7107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 6
+    CardSuit: 3
 --- !u!1 &2069980465
 GameObject:
   m_ObjectHideFlags: 0
@@ -6933,7 +7183,7 @@ Transform:
   m_GameObject: {fileID: 2100979620}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalPosition: {x: 2, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6953,7 +7203,7 @@ GameObject:
   - component: {fileID: 2112113618}
   - component: {fileID: 2112113621}
   m_Layer: 0
-  m_Name: card (39)
+  m_Name: hearts nine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7058,7 +7308,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 7
+    CardSuit: 2
 --- !u!1 &2117432327
 GameObject:
   m_ObjectHideFlags: 0
@@ -7073,7 +7325,7 @@ GameObject:
   - component: {fileID: 2117432329}
   - component: {fileID: 2117432332}
   m_Layer: 0
-  m_Name: card (26)
+  m_Name: diamonds eight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7178,7 +7430,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 6
+    CardSuit: 1
 --- !u!1 &2121121425
 GameObject:
   m_ObjectHideFlags: 0
@@ -7193,7 +7447,7 @@ GameObject:
   - component: {fileID: 2121121427}
   - component: {fileID: 2121121430}
   m_Layer: 0
-  m_Name: card (12)
+  m_Name: hearts two
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7298,7 +7552,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 0
+    CardSuit: 2
 --- !u!1 &2145355142
 GameObject:
   m_ObjectHideFlags: 0
@@ -7313,7 +7569,7 @@ GameObject:
   - component: {fileID: 2145355144}
   - component: {fileID: 2145355147}
   m_Layer: 0
-  m_Name: card (17)
+  m_Name: clubs three
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7418,7 +7674,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementDuration: 0.08
-  cardValue: 0
+  CardData:
+    CardNumber: 1
+    CardSuit: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -7430,3 +7688,5 @@ SceneRoots:
   - {fileID: 2022784018}
   - {fileID: 1839869086}
   - {fileID: 874323426}
+  - {fileID: 751863572}
+  - {fileID: 816866808}
