@@ -7,16 +7,16 @@ public class CardRanker : MonoBehaviour
 {
     public static Card GetMaxCard(List<Card> cards)
     {
-        List<Card> orderedCards = RankCards(cards);
+        RankCards(ref cards);
 
-        return orderedCards[0];
+        return cards[0];
     }
-    private static List<Card> RankCards(List<Card> cards)
+    private static void RankCards(ref List<Card> cards)
     {
         var orderedCards = cards
                           .OrderByDescending(card => (int)card.CardData.CardNumber)
                           .ThenByDescending(card => (int)card.CardData.CardSuit);
 
-        return orderedCards.ToList();
+        cards = orderedCards.ToList();
     }
 }
