@@ -13,19 +13,20 @@ public class Card : MonoBehaviour
     public void SetOwnerPlayer(Player player,Transform playerCardsParent ,int index)
     {
         Owner = player;
-        MoveToPlayerHand(player, index);
+        MoveToPlayerHand(player, playerCardsParent, index);
         transform.parent = playerCardsParent;
     }
 
     public void PlayCard(Transform playPos)
     {
         this.transform.DOMove(playPos.position, movementDuration); //here we should be notified abt turn end
-        GroundCardsManager.Instance.AddCardToGround(this);
+        Owner = null;
+        GroundManager.Instance.AddCardToGround(this);
     }
 
-    private void MoveToPlayerHand(Player player, int index)
+    private void MoveToPlayerHand(Player player, Transform playerCardsParent, int index)
     {
-        this.transform.DOMove(player.transform.position + index *  0.2f * Vector3.forward , movementDuration);
+        this.transform.DOMove(player.transform.position + index *  0.2f * playerCardsParent.forward , movementDuration);
         Owner = player;
     }
 

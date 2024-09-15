@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class NPCPlayer : Player
 {
-    public override void AddCardToHand(Card card)
-    {
-        base.AddCardToHand(card);
-
-        maxCard = CardRanker.GetMaxCard(myCards);
-    }
     public override void PlayTurn(Card card = null)
     {
+        maxCard = CardRanker.GetMaxCard(myCards);
         maxCard.PlayCard(playedCardsPosition);
+        myCards.Remove(maxCard);
+        print(this.gameObject.name+" played "+maxCard.name);
     }
 }

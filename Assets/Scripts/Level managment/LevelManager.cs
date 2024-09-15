@@ -7,8 +7,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Dealer Dealer;
     [SerializeField] Deck Deck;
 
-    int roundsMaxCount;
-    int currentRoundNumber;
+    int roundsMaxCount = 13;
+    int currentRoundNumber = 1;
     public static LevelManager Instance;
 
     private void Awake()
@@ -28,26 +28,24 @@ public class LevelManager : MonoBehaviour
     public void EndRound()
     {
         currentRoundNumber++;
-        if (currentRoundNumber > roundsMaxCount)
+        if (currentRoundNumber > roundsMaxCount) //all 4 rounds played (level is done)
         {
             EndLevel();
         }
         else
         {
             //determine max card
-            Card maxCardOnGround = GroundCardsManager.Instance.GetMaxPlayedCard();
+            Card maxCardOnGround = GroundManager.Instance.GetMaxPlayedCard();
 
             //give point to max card owner
 
-            //order shuffle deck
-
             //re-iterate
+            RoundManager.Instance.StartRound();
         }
     }
 
     private void EndLevel()
     {
-
     }
     
 }

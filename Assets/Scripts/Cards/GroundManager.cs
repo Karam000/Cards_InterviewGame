@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class GroundCardsManager : MonoBehaviour
+public class GroundManager : MonoBehaviour
 {
     EndTurnCommand EndTurnCommand = new();
     List<Card> GroundCards = new();
 
-    public static GroundCardsManager Instance;
+    public static GroundManager Instance;
 
     private void Awake()
     {
@@ -24,6 +24,7 @@ public class GroundCardsManager : MonoBehaviour
     }
     public void AddCardToGround(Card card)
     {
+        card.transform.parent = this.transform;
         GroundCards.Add(card);
         EndTurnCommand.Execute(EndTurnCommand);
     }

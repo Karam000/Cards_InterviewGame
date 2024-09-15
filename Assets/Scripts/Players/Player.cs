@@ -15,8 +15,8 @@ public abstract class Player : MonoBehaviour
         //card move animation to player hand
         card.SetOwnerPlayer(this, myCardsParent, myCards.Count-1);    
 
-        myCardsParent.transform.DOMove(myCardsParent.transform.position - Vector3.forward * 0.2f, 0.08f); //to keep cards centered
+        myCardsParent.transform.DOMove(myCardsParent.transform.position - myCardsParent.forward * 0.2f, 0.08f); //to keep cards centered
     }
-
     public abstract void PlayTurn(Card card = null);
+   
 }
