@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class CardsManager : MonoBehaviour
+public class GroundCardsManager : MonoBehaviour
 {
     EndTurnCommand EndTurnCommand = new();
     List<Card> GroundCards = new();
 
-    public static CardsManager Instance;
+    public static GroundCardsManager Instance;
 
     private void Awake()
     {

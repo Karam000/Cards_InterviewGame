@@ -21,8 +21,8 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator Start()
     {
+        Deck.ShuffleCardS();
         yield return StartCoroutine(Dealer.DealCards(Deck));
-
         RoundManager.Instance.StartRound();
     }
     public void EndRound()
@@ -35,7 +35,7 @@ public class LevelManager : MonoBehaviour
         else
         {
             //determine max card
-            Card maxCardOnGround = CardsManager.Instance.GetMaxPlayedCard();
+            Card maxCardOnGround = GroundCardsManager.Instance.GetMaxPlayedCard();
 
             //give point to max card owner
 
