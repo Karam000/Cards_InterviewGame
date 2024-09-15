@@ -30,20 +30,7 @@ public class CardsManager : MonoBehaviour
 
     public Card GetMaxPlayedCard()
     {
-        return GetMaxCard(GroundCards);
+        return CardRanker.GetMaxCard(GroundCards);
     }
-    public Card GetMaxCard(List<Card> cards)
-    {
-        RankCards(cards);
-
-        return cards[0];
-    }
-    private void RankCards(List<Card> cards)
-    {
-        var orderedCards = cards
-                          .OrderByDescending(card => card.CardData.CardNumber)
-                          .ThenByDescending(card => card.CardData.CardSuit);
-                           
-        cards = orderedCards.ToList();
-    }
+    
 }
