@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class UserPlayer : Player
 {
-    public override void PlayTurn(Card card = null)
+    public override IEnumerator PlayTurn(Card card = null)
     {
-        card.PlayCard(playedCardsPosition);
+       yield return null;
+       card.PlayCard(playedCardsPosition);
     }
 }

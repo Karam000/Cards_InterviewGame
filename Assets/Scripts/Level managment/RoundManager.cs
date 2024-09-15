@@ -23,6 +23,7 @@ public class RoundManager : MonoBehaviour, IObserver<EndTurnCommand>
     public void StartRound()
     {
         turnsCount = 0;
+        GroundManager.Instance.ResetCards();
         PlayNextTurn();
     }
     private void UpdateTurn()

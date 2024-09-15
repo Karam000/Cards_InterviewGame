@@ -32,7 +32,7 @@ public class Card : MonoBehaviour
     private void OnMouseDown()
     {
         if (Owner is UserPlayer) //to prevent from clicking on other players' cards
-            Owner.PlayTurn(this);
+            StartCoroutine(Owner.PlayTurn(this));
     }
 }
 

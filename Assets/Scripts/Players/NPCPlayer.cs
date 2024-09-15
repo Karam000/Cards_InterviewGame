@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class NPCPlayer : Player
 {
-    public override void PlayTurn(Card card = null)
+    public override IEnumerator PlayTurn(Card card = null)
     {
+        yield return new WaitForSeconds(0.6f); //simulate NPC thinking
         maxCard = CardRanker.GetMaxCard(myCards);
         maxCard.PlayCard(playedCardsPosition);
         myCards.Remove(maxCard);
-        print(this.gameObject.name+" played "+maxCard.name);
     }
 }

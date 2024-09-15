@@ -19,7 +19,7 @@ public abstract class Player : MonoBehaviour
 
         myCardsParent.transform.DOMove(myCardsParent.transform.position - myCardsParent.forward * 0.2f, 0.08f); //to keep cards centered
     }
-    public abstract void PlayTurn(Card card = null);
+    public abstract IEnumerator PlayTurn(Card card = null);
 
     public void AddScorePoint()
     {

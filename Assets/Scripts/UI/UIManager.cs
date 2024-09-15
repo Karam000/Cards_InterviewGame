@@ -1,18 +1,42 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class UIManager : MonoBehaviour, IParamObserver<IncrementScoreCommand, Player>
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] PlayersUIList PlayersUIData;
+    public static UIManager Instance;
+    private void Awake()
     {
-        
+        Instance = this;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void OnNotify(IncrementScoreCommand incrementScoreCommand, Player player)
     {
-        
+        print("incrementing player: " + player.name + " to be " + player.Score + " points");
+        PlayersUIData[player].scoreText.text = player.Score.ToString();
+    }
+}
+
+[Serializable]
+public class PlayerUIData
+{
+    public Player Player;
+    public Text scoreText;
+    public Text nameText;
+    public Image avatarImg;
+}
+
+[Serializable]
+public class PlayersUIList //just for custom indexing
+{
+    public List<PlayerUIData> PlayersUIData;
+    public PlayerUIData this[Player player]
+    {
+        get
+        {
+            return PlayersUIData.Find(x => x.Player == player);
+        }
     }
 }

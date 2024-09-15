@@ -52,7 +52,7 @@ public class PlayersManager : MonoBehaviour, IObserver<StartTurnCommand>, IObser
     private void PlayCurrentTurn()
     {
         if(currentPlayer is NPCPlayer) 
-        currentPlayer.PlayTurn();
+        StartCoroutine(currentPlayer.PlayTurn());
     }
 
     

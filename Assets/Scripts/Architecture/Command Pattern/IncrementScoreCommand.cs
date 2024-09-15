@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IncrementScoreCommand : IParamCommand<IncrementScoreCommand,int>
+public class IncrementScoreCommand : IParamCommand<IncrementScoreCommand,Player>
 {
-    public int Score { get; private set; }
-    override public void Execute(IncrementScoreCommand t,int score)
+    override public void Execute(IncrementScoreCommand t, Player score)
     {
-        Score = score;
         base.Execute(t,score);
     }
 }

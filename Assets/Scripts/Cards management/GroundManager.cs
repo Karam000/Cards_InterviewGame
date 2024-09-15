@@ -29,6 +29,11 @@ public class GroundManager : MonoBehaviour
         EndTurnCommand.Execute(EndTurnCommand);
     }
 
+    public void ResetCards()
+    {
+        GroundCards.Clear();
+    }
+
     public Card GetMaxPlayedCard()
     {
         return CardRanker.GetMaxCard(GroundCards);

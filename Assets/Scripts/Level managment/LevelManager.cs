@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,19 +29,24 @@ public class LevelManager : MonoBehaviour
     }
     public void EndRound()
     {
+        //determine max card
+        Card maxCardOnGround = GroundManager.Instance.GetMaxPlayedCard();
+
+        //visual fr max card
+        maxCardOnGround.transform.DOShakeRotation(0.5f);
+        maxCardOnGround.transform.DOShakeScale(0.5f);
+
+        //give point to max card owner
+        ScoreManager.Instance.AddPointToPlayer(maxCardOnGround.Owner);
+
         currentRoundNumber++;
         if (currentRoundNumber > roundsMaxCount) //all 13 rounds played (level is done)
         {
+            //end level
             EndLevel();
         }
         else
         {
-            //determine max card
-            Card maxCardOnGround = GroundManager.Instance.GetMaxPlayedCard();
-
-            //give point to max card owner
-            ScoreManager.Instance.AddPointToPlayer(maxCardOnGround.Owner);
-
             //re-iterate
             RoundManager.Instance.StartRound();
         }
@@ -48,6 +54,9 @@ public class LevelManager : MonoBehaviour
 
     private void EndLevel()
     {
+        //determine winner
+        //celebrate winner
+        //ask for restart from UI manager
     }
     
 }

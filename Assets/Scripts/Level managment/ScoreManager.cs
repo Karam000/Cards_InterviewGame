@@ -11,11 +11,14 @@ public class ScoreManager : MonoBehaviour
     {
         Instance = this;
     }
-
+    private void Start()
+    {
+        IncrementScoreCommand.AddObserver(UIManager.Instance);
+    }
     public void AddPointToPlayer(Player player)
     {
         player.AddScorePoint();
 
-        IncrementScoreCommand.Execute(IncrementScoreCommand, player.Score);
+        IncrementScoreCommand.Execute(IncrementScoreCommand, player);
     }
 }
