@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
 
     int roundsMaxCount = 13;
     int currentRoundNumber = 1;
+
     public static LevelManager Instance;
 
     private void Awake()
@@ -28,7 +29,7 @@ public class LevelManager : MonoBehaviour
     public void EndRound()
     {
         currentRoundNumber++;
-        if (currentRoundNumber > roundsMaxCount) //all 4 rounds played (level is done)
+        if (currentRoundNumber > roundsMaxCount) //all 13 rounds played (level is done)
         {
             EndLevel();
         }
@@ -38,6 +39,7 @@ public class LevelManager : MonoBehaviour
             Card maxCardOnGround = GroundManager.Instance.GetMaxPlayedCard();
 
             //give point to max card owner
+            ScoreManager.Instance.AddPointToPlayer(maxCardOnGround.Owner);
 
             //re-iterate
             RoundManager.Instance.StartRound();

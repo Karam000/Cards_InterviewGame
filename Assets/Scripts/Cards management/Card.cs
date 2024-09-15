@@ -20,7 +20,6 @@ public class Card : MonoBehaviour
     public void PlayCard(Transform playPos)
     {
         this.transform.DOMove(playPos.position, movementDuration); //here we should be notified abt turn end
-        Owner = null;
         GroundManager.Instance.AddCardToGround(this);
     }
 
