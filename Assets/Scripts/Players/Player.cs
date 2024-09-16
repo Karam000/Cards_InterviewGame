@@ -10,6 +10,7 @@ public abstract class Player : MonoBehaviour
 
     protected List<Card> myCards = new();
     protected Card maxCard;
+
     public int Score { get; protected set; }
     public virtual void AddCardToHand(Card card)
     {
@@ -19,6 +20,8 @@ public abstract class Player : MonoBehaviour
 
         myCardsParent.transform.DOMove(myCardsParent.transform.position - myCardsParent.forward * 0.4f, 0.08f); //to keep cards centered
     }
+
+   
     public abstract IEnumerator PlayTurn(Card card = null);
 
     public void AddScorePoint()
