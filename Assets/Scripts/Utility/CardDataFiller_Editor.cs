@@ -1,11 +1,10 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CardDataFiller_Editor : MonoBehaviour
 {
-    [SerializeField] List<Card> cards;
+    [SerializeField] private List<Card> cards;
 
     [ContextMenu("Fill card data")]
     private void FillData()
@@ -19,12 +18,21 @@ public class CardDataFiller_Editor : MonoBehaviour
                 {
                     cards[cardCounter].CardData.CardNumber = (CardNumber)j;
                     cards[cardCounter].CardData.CardSuit = (CardSuits)i;
-                    cards[cardCounter].gameObject.name = ((CardSuits)i).ToString()+" "+ ((CardNumber)j).ToString();
+                    cards[cardCounter].gameObject.name = ((CardSuits)i).ToString() + " " + ((CardNumber)j).ToString();
                     cardCounter++;
                     continue;
                 }
                 //cardCounter %= Enum.GetValues(typeof(CardNumber)).Length;
-            } 
+            }
+        }
+    }
+
+    [ContextMenu("Rename cards by data")]
+    private void RenameCardsByData()
+    {
+        foreach (var card in cards)
+        {
+            card.gameObject.name = card.CardData.CardSuit.ToString() + " " + card.CardData.CardNumber.ToString();
         }
     }
 }

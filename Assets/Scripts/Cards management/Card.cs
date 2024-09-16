@@ -25,7 +25,12 @@ public class Card : MonoBehaviour
 
     private void MoveToPlayerHand(Player player, Transform playerCardsParent, int index)
     {
-        this.transform.DOMove(player.transform.position + index *  0.2f * playerCardsParent.forward , movementDuration);
+        this.transform.DOMove(player.transform.position + index *  0.4f * playerCardsParent.forward + index * 0.05f * playerCardsParent.up, movementDuration);
+        this.transform.forward = -playerCardsParent.right;
+        if(player is UserPlayer)
+        {
+            this.transform.localScale = new Vector3(this.transform.localScale.x,-this.transform.localScale.y,this.transform.localScale.z);
+        }
         Owner = player;
     }
 
