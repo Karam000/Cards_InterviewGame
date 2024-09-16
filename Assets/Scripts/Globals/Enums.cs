@@ -5,6 +5,7 @@ public enum CardSuits
     hearts,
     spades
 }
+
 public enum CardNumber
 {
     two,
@@ -22,4 +23,16 @@ public enum CardNumber
     ace
 }
 
+public enum Emojis
+{
+    Thinking,
+    Confident,
+    Desperate,
+    Bored
+}
 
+public enum CelebrationStates
+{
+    PlayerWin,
+    MaxCard
+}

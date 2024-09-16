@@ -21,10 +21,14 @@ public class Card : MonoBehaviour
 
     public void PlayCard(Transform playPos)
     {
-        this.transform.DOMove(playPos.position, movementDuration); //here we should be notified abt turn end
-        GroundManager.Instance.AddCardToGround(this);
+        this.transform.DOMove(playPos.position, movementDuration)
+                      .onComplete+= ()=> GroundManager.Instance.AddCardToGround(this);
     }
-
+    public void Flip()
+    {
+        this.transform.localScale = new Vector3(this.transform.localScale.x, -this.transform.localScale.y, this.transform.localScale.z);
+    }
+   
     public void Focus()
     {
         this.transform.DOScale(0.3f, 0.5f);
@@ -48,7 +52,7 @@ public class Card : MonoBehaviour
         this.transform.forward = -playerCardsParent.right;
         if(player is UserPlayer)
         {
-            this.transform.localScale = new Vector3(this.transform.localScale.x,-this.transform.localScale.y,this.transform.localScale.z);
+            Flip();
         }
         Owner = player;
     }

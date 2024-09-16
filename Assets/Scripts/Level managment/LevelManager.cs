@@ -1,12 +1,14 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] Dealer Dealer;
     [SerializeField] Deck Deck;
+    [SerializeField] List<Player> AllPlayers;
 
     int roundsMaxCount = 13;
     int currentRoundNumber = 1;
@@ -33,8 +35,9 @@ public class LevelManager : MonoBehaviour
         Card maxCardOnGround = GroundManager.Instance.GetMaxPlayedCard();
 
         //visual fr max card
-        maxCardOnGround.transform.DOShakeRotation(0.5f);
-        maxCardOnGround.transform.DOShakeScale(0.5f);
+        GameFeelManager.Instance.CelebrateCard(maxCardOnGround);
+        //maxCardOnGround.transform.DOShakeRotation(0.5f);
+        //maxCardOnGround.transform.DOShakeScale(0.5f);
 
         //give point to max card owner
         ScoreManager.Instance.AddPointToPlayer(maxCardOnGround.Owner);
@@ -55,7 +58,9 @@ public class LevelManager : MonoBehaviour
     private void EndLevel()
     {
         //determine winner
+        AllPlayers.OrderBy((p) => p.Score);
         //celebrate winner
+        GameFeelManager.Instance.CelebratePlayer(AllPlayers[0]);
         //ask for restart from UI manager
     }
     
