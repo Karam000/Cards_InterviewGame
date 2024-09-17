@@ -9,6 +9,7 @@ public class VisualManager : MonoBehaviour
     [SerializeField] private List<ParticleSystem> MaxCardParticle;
     [SerializeField] private NPCEmotionList NPCEmotionList;
 
+    bool isPlayingEmoji = false;
     public void PlayCelebrationParticle(CelebrationStates celebarationState, Vector3 position)
     {
         List<ParticleSystem> particleSystems = DetermineParticleSystem(celebarationState);
@@ -24,6 +25,9 @@ public class VisualManager : MonoBehaviour
 
     public void PlayEmoji_Random(float thinkingTime, Player player, float emojiPlayPercentage)
     {
+        if (isPlayingEmoji) return;
+
+
         List<NPCEmotion> validEmotions = NPCEmotionList[thinkingTime];
 
         if (Random.Range(0, 100) < emojiPlayPercentage)
@@ -31,17 +35,25 @@ public class VisualManager : MonoBehaviour
 
         List<GameObject> EmotionSprites = validEmotions[Random.Range(0, validEmotions.Count)].EmotionSprites;
 
-        ShowSprite(EmotionSprites[Random.Range(0, EmotionSprites.Count)], player);
+        ShowEmojiSprite(EmotionSprites[Random.Range(0, EmotionSprites.Count)], player);
     }
 
-    private void ShowSprite(GameObject emoji, Player player)
+    private void ShowEmojiSprite(GameObject emoji, Player player)
     {
+        isPlayingEmoji = true;
+
         emoji.transform.position = player.EmojiPosition.position;
         emoji.SetActive(true);
 
-        emoji.GetComponent<SpriteRenderer>().DOFade(1, 0.5f);
-        emoji.transform.DOMoveY(1, 0.5f)
-                       .onComplete += ()=> emoji.SetActive(false);
+        Vector3 targetPos = new Vector3(emoji.transform.position.x, emoji.transform.position.y+1,  emoji.transform.position.z);
+
+        emoji.GetComponent<SpriteRenderer>().DOFade(1, 2f);
+        emoji.transform.DOMove(targetPos, 2f)
+                       .onComplete += () =>
+                       {
+                           emoji.SetActive(false);
+                           isPlayingEmoji = false;
+                       };
     }
 
     private List<ParticleSystem> DetermineParticleSystem(CelebrationStates celebarationState)

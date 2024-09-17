@@ -35,10 +35,10 @@ public class GameFeelManager : MonoBehaviour
 
         return thinkingTime;
     }
-    private void SetNPCEmotion(Player npcPlayer)
-    {
-        Card maxPlayedCard = GroundManager.Instance.GetMaxPlayedCard();
-    }
+    //private void SetNPCEmotion(Player npcPlayer)
+    //{
+    //    Card maxPlayedCard = GroundManager.Instance.GetMaxPlayedCard();
+    //}
     private void PlayRandomEmoji(float thinkingTime,Player npcPlayer)
     {
         VisualManager.PlayEmoji_Random(thinkingTime, npcPlayer, NPCEmojiPercentage);
