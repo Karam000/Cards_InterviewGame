@@ -8,10 +8,12 @@ public abstract class Player : MonoBehaviour
     [SerializeField] Transform myCardsParent;
     [SerializeField] protected Transform playedCardsPosition;
 
-    protected List<Card> myCards = new();
-    protected Card maxCard;
-
     public int Score { get; protected set; }
+    public Card maxCard { get; protected set; }
+    public Transform EmojiPosition;
+
+    protected List<Card> myCards = new();
+
     public virtual void AddCardToHand(Card card)
     {
         myCards.Add(card);

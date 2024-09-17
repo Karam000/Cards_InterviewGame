@@ -23,7 +23,7 @@ public enum CardNumber
     ace
 }
 
-public enum Emojis
+public enum Emotions
 {
     Thinking,
     Confident,

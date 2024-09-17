@@ -11,6 +11,11 @@ public class CardRanker : MonoBehaviour
 
         return cards[0];
     }
+
+    //public static bool CompareCards(Card card1, Card card2)
+    //{
+
+    //}
     private static void RankCards(ref List<Card> cards)
     {
         var orderedCards = cards
@@ -19,4 +24,6 @@ public class CardRanker : MonoBehaviour
 
         cards = orderedCards.ToList();
     }
+
+    
 }
