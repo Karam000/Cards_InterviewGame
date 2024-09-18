@@ -33,6 +33,7 @@ public class PlayersManager : MonoBehaviour, IObserver<StartTurnCommand>, IObser
     public void RandomizeFirstPlayer()
     {
         startingPlayerId = Random.Range(0, Players.Count); //exclusive so will be max: count-1
+        currentPlayerId = startingPlayerId;
         currentPlayer = Players[startingPlayerId];
     }
 

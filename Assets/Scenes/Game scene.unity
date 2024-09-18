@@ -13857,6 +13857,8 @@ MonoBehaviour:
   - {fileID: 620167957}
   - {fileID: 1977901724}
   - {fileID: 924042738}
+  shuffleDuration: 1
+  shuffleDistance: 2
 --- !u!4 &1839869086
 Transform:
   m_ObjectHideFlags: 0

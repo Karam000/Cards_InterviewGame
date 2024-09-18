@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>bdf566295d7ae11448db6fcca336a769</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2024-06-01T16:39:43+03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6ba396a156d27114e98b47e0fe351644</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2024-06-01T16:39:43+03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>948530c470394484baefaf27c991e266</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2024-06-01T16:39:43+03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>693b4fac81212a340881ac301ad1ec69</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/CollectionData.cs</fileName>
+    <timeStamp>2024-06-01T16:39:43+03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e779339c461f6094f8c577212900ad47</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2024-06-01T16:39:43+03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>24574ccfd35a59e4ea7b1cfc9923f3dc</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2024-06-01T16:39:43+03:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b766d08851589514b97afb23c6f30a70</guid>
+    <fileName>Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs</fileName>
+    <timeStamp>2024-02-04T13:31:25+02:00</timeStamp>
+    <typeFullName>
+      <string>DG.Tweening.DOTweenModuleAudio</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e944529dcaee98f4e9498d80e541d93e</guid>
+    <fileName>Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs</fileName>
+    <timeStamp>2024-02-04T13:31:26+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dae9aa560b4242648a3affa2bfabc365</guid>
+    <fileName>Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs</fileName>
+    <timeStamp>2024-02-04T13:31:26+02:00</timeStamp>
+    <typeFullName>
+      <string>DG.Tweening.DOTweenModulePhysics</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>230fe34542e175245ba74b4659dae700</guid>
+    <fileName>Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs</fileName>
+    <timeStamp>2024-02-04T13:31:19+02:00</timeStamp>
+    <typeFullName>
+      <string>DG.Tweening.DOTweenModulePhysics2D</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>188918ab119d93148aa0de59ccf5286b</guid>
+    <fileName>Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs</fileName>
+    <timeStamp>2024-02-04T13:31:19+02:00</timeStamp>
+    <typeFullName>
+      <string>DG.Tweening.DOTweenModuleSprite</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a060394c03331a64392db53a10e7f2d1</guid>
+    <fileName>Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs</fileName>
+    <timeStamp>2024-02-04T13:31:24+02:00</timeStamp>
+    <typeFullName>
+      <string>DG.Tweening.DOTweenModuleUI</string>
+      <string>DG.Tweening.DOTweenModuleUI+Utils</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>63c02322328255542995bd02b47b0457</guid>
+    <fileName>Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs</fileName>
+    <timeStamp>2024-02-04T13:31:22+02:00</timeStamp>
+    <typeFullName>
+      <string>DG.Tweening.DOTweenModuleUnityVersion</string>
+      <string>DG.Tweening.DOTweenCYInstruction</string>
+      <string>DG.Tweening.DOTweenCYInstruction+WaitForCompletion</string>
+      <string>DG.Tweening.DOTweenCYInstruction+WaitForRewind</string>
+      <string>DG.Tweening.DOTweenCYInstruction+WaitForKill</string>
+      <string>DG.Tweening.DOTweenCYInstruction+WaitForElapsedLoops</string>
+      <string>DG.Tweening.DOTweenCYInstruction+WaitForPosition</string>
+      <string>DG.Tweening.DOTweenCYInstruction+WaitForStart</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7bcaf917d9cf5b84090421a5a2abe42e</guid>
+    <fileName>Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs</fileName>
+    <timeStamp>2024-02-04T13:31:23+02:00</timeStamp>
+    <typeFullName>
+      <string>DG.Tweening.DOTweenModuleUtils</string>
+      <string>DG.Tweening.DOTweenModuleUtils+Physics</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9c4fcce295aee5d4fb38ac4f82c8e664</guid>
+    <fileName>Assets/JMO Assets/Welcome Screen/CFXR_WelcomeScreen.cs</fileName>
+    <timeStamp>2023-11-03T20:28:57+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5b9e986752e899d4fbfdcfa0c4f9dc01</guid>
+    <fileName>Assets/Scripts/Cards management/Card.cs</fileName>
+    <timeStamp>2024-09-18T23:36:30.7903976+03:00</timeStamp>
+    <typeFullName>
+      <string>Card</string>
+      <string>CardData</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>40c82e3bf9ca8854082b910f89976c6a</guid>
+    <fileName>Assets/Scripts/Cards management/CardRanker.cs</fileName>
+    <timeStamp>2024-09-18T23:58:24.3145437+03:00</timeStamp>
+    <typeFullName>
+      <string>CardRanker</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>26a66ebf451b9da4a85508a40ca65184</guid>
+    <fileName>Assets/Scripts/Cards management/Deck.cs</fileName>
+    <timeStamp>2024-09-18T23:09:39.5136896+03:00</timeStamp>
+    <typeFullName>
+      <string>Deck</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>49494f6fe8ff2d24ba97ee84e1276d05</guid>
+    <fileName>Assets/Scripts/Cards management/GroundManager.cs</fileName>
+    <timeStamp>2024-09-18T23:12:45.6851262+03:00</timeStamp>
+    <typeFullName>
+      <string>GroundManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ba60c7f9d44a16546b77a1d69ba4c6c1</guid>
+    <fileName>Assets/Scripts/Game feel/AudioManager.cs</fileName>
+    <timeStamp>2024-09-18T23:20:01.2573214+03:00</timeStamp>
+    <typeFullName>
+      <string>AudioManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>413f43b419c719b40bc4d4cc0401216d</guid>
+    <fileName>Assets/Scripts/Game feel/GameFeelManager.cs</fileName>
+    <timeStamp>2024-09-18T23:29:21.2945935+03:00</timeStamp>
+    <typeFullName>
+      <string>GameFeelManager</string>
+      <string>NPCEmotion</string>
+      <string>NPCEmotionList</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c714d90d1c402834cbf9b7f488c665dc</guid>
+    <fileName>Assets/Scripts/Game feel/VisualManager.cs</fileName>
+    <timeStamp>2024-09-18T23:26:03.7308701+03:00</timeStamp>
+    <typeFullName>
+      <string>VisualManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>848ca9d14cf9c5548bf029a986ff7cbc</guid>
+    <fileName>Assets/Scripts/Globals/Enums.cs</fileName>
+    <timeStamp>2024-09-18T00:47:24.8443461+03:00</timeStamp>
+    <typeFullName>
+      <string>CardSuits</string>
+      <string>CardNumber</string>
+      <string>Emotions</string>
+      <string>CelebrationStates</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4d84a0bc29bf7744b91ff1ca22b6493b</guid>
+    <fileName>Assets/Scripts/Level managment/Dealer.cs</fileName>
+    <timeStamp>2024-09-18T23:07:08.3223243+03:00</timeStamp>
+    <typeFullName>
+      <string>Dealer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2dfc9ece6aef269409fb36e661748830</guid>
+    <fileName>Assets/Scripts/Level managment/LevelManager.cs</fileName>
+    <timeStamp>2024-09-18T23:51:31.4796362+03:00</timeStamp>
+    <typeFullName>
+      <string>LevelManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>92de067122d8d624eb09322d8dabedf9</guid>
+    <fileName>Assets/Scripts/Level managment/RoundManager.cs</fileName>
+    <timeStamp>2024-09-18T23:41:16.9855214+03:00</timeStamp>
+    <typeFullName>
+      <string>RoundManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1fed451ec31423541b7a604a560a44fc</guid>
+    <fileName>Assets/Scripts/Level managment/ScoreManager.cs</fileName>
+    <timeStamp>2024-09-18T23:59:39.5442069+03:00</timeStamp>
+    <typeFullName>
+      <string>ScoreManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0fcacb3dc36de6446ba936d91e44b94e</guid>
+    <fileName>Assets/Scripts/Players/NPCPlayer.cs</fileName>
+    <timeStamp>2024-09-18T23:18:32.7155046+03:00</timeStamp>
+    <typeFullName>
+      <string>NPCPlayer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e097d968eb643a247ad43c4f15cd154a</guid>
+    <fileName>Assets/Scripts/Players/Player.cs</fileName>
+    <timeStamp>2024-09-18T23:46:30.9586555+03:00</timeStamp>
+    <typeFullName>
+      <string>Player</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a1d607e2067a73948bcbd3d62c9d158a</guid>
+    <fileName>Assets/Scripts/Players/PlayersManager.cs</fileName>
+    <timeStamp>2024-09-18T23:44:19.4639688+03:00</timeStamp>
+    <typeFullName>
+      <string>PlayersManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>70238dd9de59fe547b9c6a6d37e26ff1</guid>
+    <fileName>Assets/Scripts/Players/UserPlayer.cs</fileName>
+    <timeStamp>2024-09-18T23:47:02.4423671+03:00</timeStamp>
+    <typeFullName>
+      <string>UserPlayer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f9b6acc8030689a46a389050493a56ba</guid>
+    <fileName>Assets/Scripts/UI/LevelEndPanel.cs</fileName>
+    <timeStamp>2024-09-18T23:14:49.1910761+03:00</timeStamp>
+    <typeFullName>
+      <string>LevelEndPanel</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1ebfdd7bd2abfc842a0adc9b71ce42ab</guid>
+    <fileName>Assets/Scripts/UI/UIDataClasses.cs</fileName>
+    <timeStamp>2024-09-18T23:14:21.2814443+03:00</timeStamp>
+    <typeFullName>
+      <string>PlayerUIData</string>
+      <string>PlayersUIList</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0ad863bb6fefeaa42a4ff90f76b9198f</guid>
+    <fileName>Assets/Scripts/UI/UIManager.cs</fileName>
+    <timeStamp>2024-09-18T23:16:28.3754221+03:00</timeStamp>
+    <typeFullName>
+      <string>UIManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a845862d64b8e2445b7ccd674ecf75db</guid>
+    <fileName>Assets/Scripts/Utility/CardDataFiller_Editor.cs</fileName>
+    <timeStamp>2024-09-18T23:59:14.4665034+03:00</timeStamp>
+    <typeFullName>
+      <string>CardDataFiller_Editor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>35e9f6a6071b4f44fa2cf94b59d33251</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR_Demo.cs</fileName>
+    <timeStamp>2023-11-03T20:27:15+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1529372f6ddbfb0429260b50bc9d1aa8</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR_Demo_Rotate.cs</fileName>
+    <timeStamp>2023-11-03T20:26:37+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fd81627723031224baf6eef1b52a3f50</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR_Demo_Translate.cs</fileName>
+    <timeStamp>2023-11-03T20:30:57+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>791836c23c9770c4cad549b7095d2770</guid>
+    <fileName>Assets/Scripts/Architecture/Command Pattern/EndTurnCommand.cs</fileName>
+    <timeStamp>2024-09-18T23:56:33.1160959+03:00</timeStamp>
+    <typeFullName>
+      <string>EndTurnCommand</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a819ac0be4eb79843a3d1f88032f0589</guid>
+    <fileName>Assets/Scripts/Architecture/Command Pattern/ICommand.cs</fileName>
+    <timeStamp>2024-09-18T23:53:28.5513594+03:00</timeStamp>
+    <typeFullName>
+      <string>ICommand`1</string>
+      <string>IParamCommand`2</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>cb4d30b4288b17c4ab4d7e014a1cde6d</guid>
+    <fileName>Assets/Scripts/Architecture/Command Pattern/IncrementScoreCommand.cs</fileName>
+    <timeStamp>2024-09-18T23:56:06.0261675+03:00</timeStamp>
+    <typeFullName>
+      <string>IncrementScoreCommand</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>71be6cbc98fdfb34198f73bf39a3de92</guid>
+    <fileName>Assets/Scripts/Architecture/Command Pattern/StartTurnCommand.cs</fileName>
+    <timeStamp>2024-09-18T23:55:53.6825206+03:00</timeStamp>
+    <typeFullName>
+      <string>StartTurnCommand</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>69dd8d546a831c54b8ab107900833d82</guid>
+    <fileName>Assets/Scripts/Architecture/Observer Pattern/IObserver.cs</fileName>
+    <timeStamp>2024-09-15T22:26:16.4690411+03:00</timeStamp>
+    <typeFullName>
+      <string>IObserver`1</string>
+      <string>IParamObserver`2</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ce7d96d3a4d4f3b4681ab437a9710d60</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR_ExpressionParser.cs</fileName>
+    <timeStamp>2023-11-03T20:30:00+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4fb4c15e772a1cc4baecc7a958bf9cc7</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR_MaterialInspector.cs</fileName>
+    <timeStamp>2023-11-03T20:27:39+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fe56ec25963759b49955809beeb4324b</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR_ShaderImporter.cs</fileName>
+    <timeStamp>2023-11-03T20:31:04+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>29d46695388f9a84d9ae71b5140727a3</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR_ShaderPostProcessor.cs</fileName>
+    <timeStamp>2023-11-03T20:27:00+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>26306333afc273640814fd7a7b3968e0</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR_Styles.cs</fileName>
+    <timeStamp>2023-11-03T20:26:56+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>04efd1cc0f5c31c4da57d931c6665976</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_Effect.CameraShake.cs</fileName>
+    <timeStamp>2023-11-03T20:26:22+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9205bc1bbacc90040a998067b5643d16</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_Effect.cs</fileName>
+    <timeStamp>2023-11-03T20:28:48+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>403cb51292a8b3c4c870cccfc0e68659</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_EmissionBySurface.cs</fileName>
+    <timeStamp>2023-11-03T20:27:27+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>03c8102322ad0d04fa6ae3f17887e967</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_ParticleText.cs</fileName>
+    <timeStamp>2023-11-03T20:26:18+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ffbf5f8b3f8ff3e49bbbf5495becc6b3</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_ParticleTextFontAsset.cs</fileName>
+    <timeStamp>2023-11-03T20:31:05+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6363bba448bf64e60a763433f9ddf81b</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Bloom.cs</fileName>
+    <timeStamp>2023-11-03T20:27:57+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>036bc30d96c3349ce86bfc8d95667da7</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/BloomEditor.cs</fileName>
+    <timeStamp>2023-11-03T20:26:17+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4afcb2949e7fb42679b587b8848b7e02</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/BloomGraphDrawer.cs</fileName>
+    <timeStamp>2023-11-03T20:27:36+02:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+</ArrayOfTypeDate>
