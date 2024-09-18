@@ -35,7 +35,16 @@ public class VisualManager : MonoBehaviour
         if (Random.Range(0, 100) < emojiPlayPercentage)
             return;
 
-        List<GameObject> EmotionSprites = validEmotions[Random.Range(0, validEmotions.Count)]?.EmotionSprites;
+        List<GameObject> EmotionSprites;
+        try
+        {
+            EmotionSprites = validEmotions[Random.Range(0, validEmotions.Count)]?.EmotionSprites;
+        }
+        catch (System.Exception)
+        {
+
+            return;
+        }
 
         if(EmotionSprites == null || EmotionSprites.Count == 0) return;
         ShowEmojiSprite(EmotionSprites[Random.Range(0, EmotionSprites.Count)], player);

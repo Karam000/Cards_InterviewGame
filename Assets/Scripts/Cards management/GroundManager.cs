@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GroundManager : MonoBehaviour
 {
+  
+
     EndTurnCommand EndTurnCommand = new();
     List<Card> GroundCards = new();
 

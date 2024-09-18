@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayersManager : MonoBehaviour, IObserver<StartTurnCommand>, IObserver<EndTurnCommand>
 {
     [SerializeField] List<Player> Players;
+    [SerializeField] GameObject Arrow;
+    [SerializeField] Material ArrowMaterial;
+    [SerializeField] List<Color> ArrowColors;
 
     private Player currentPlayer;
     private int currentPlayerId;
@@ -51,8 +54,20 @@ public class PlayersManager : MonoBehaviour, IObserver<StartTurnCommand>, IObser
 
     private void PlayCurrentTurn()
     {
-        if (currentPlayer is NPCPlayer) 
-        StartCoroutine(currentPlayer.PlayTurn());
+        if (currentPlayer is NPCPlayer)
+        {
+            if(!Arrow.activeInHierarchy)
+                Arrow.SetActive(true);
+
+            Arrow.transform.position = currentPlayer.transform.position+Vector3.up * 3;
+            ArrowMaterial.color = ArrowColors[Players.IndexOf(currentPlayer)];
+
+            StartCoroutine(currentPlayer.PlayTurn());
+        }
+        else
+        {
+            Arrow.SetActive(false);
+        }
 
         RoundManager.Instance.SetIsUserTurn(currentPlayer is UserPlayer);
     }
