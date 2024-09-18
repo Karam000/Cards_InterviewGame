@@ -46,14 +46,16 @@ public class PlayersManager : MonoBehaviour, IObserver<StartTurnCommand>, IObser
     private void UpdateCurrentPlayer()
     {
         currentPlayer = Players[(++currentPlayerId) % Players.Count];
-        //visual for current player
+        //maybe add visual for current player ??
     }
 
     private void PlayCurrentTurn()
     {
-        if(currentPlayer is NPCPlayer) 
+        if (currentPlayer is NPCPlayer) 
         StartCoroutine(currentPlayer.PlayTurn());
+
+        RoundManager.Instance.SetIsUserTurn(currentPlayer is UserPlayer);
     }
 
-    
+
 }

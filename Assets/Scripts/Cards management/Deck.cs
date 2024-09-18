@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,15 @@ public class Deck : MonoBehaviour
 
     public Card PopCard() => Cards.Pop();
 
+    [ContextMenu("Organize in a deck form")]
+    private void OrganizeCards()
+    {
+        for (int i = CardsList.Count-1; i >0; i--)
+        {
+            CardsList[i].transform.position = this.transform.position + ((CardsList.Count-1-i) * 0.01f * Vector3.up);
+        }
+    }
+
     [ContextMenu("Shuffle")]
     public void ShuffleCardS()
     {
@@ -38,10 +48,12 @@ public class Deck : MonoBehaviour
 
             //Step 3: Swap the selected item with the last "unstruck" item in the collection
             Card temp = CardsList[n];
+            //CardsList[k].transform.DOShakePosition(1f, 0.5f);  >>> trying to simulate shuffle animation simply (doesn't feel good)
             CardsList[n] = CardsList[k];
+            //CardsList[n].transform.DOShakePosition(1f, 0.5f);
             CardsList[k] = temp;
         }
-
+        OrganizeCards();
         CardsListToStack();
     }
     

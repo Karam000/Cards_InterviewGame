@@ -5,7 +5,10 @@ using UnityEngine;
 public class RoundManager : MonoBehaviour, IObserver<EndTurnCommand>
 {
     StartTurnCommand StartTurnCommand = new();
-    int turnsCount = 0;
+    public int RoundCount {  get; private set; }
+    public bool IsUserTurn { get; private set; }
+
+    private int turnsCount;
 
     public static RoundManager Instance;
     private void Awake()
@@ -23,8 +26,18 @@ public class RoundManager : MonoBehaviour, IObserver<EndTurnCommand>
     public void StartRound()
     {
         turnsCount = 0;
+        IsUserTurn = false;
         GroundManager.Instance.ResetCards();
         PlayNextTurn();
+    }
+    public void EndGame()
+    {
+        turnsCount = 0;
+        RoundCount = 0;
+    }
+    public void SetIsUserTurn(bool isUserTurn)
+    {
+        IsUserTurn=isUserTurn;
     }
     private void UpdateTurn()
     {
@@ -44,6 +57,7 @@ public class RoundManager : MonoBehaviour, IObserver<EndTurnCommand>
     }
     private void PlayNextTurn()
     {
+        RoundCount++;
         StartTurnCommand.Execute(StartTurnCommand);
     }
 

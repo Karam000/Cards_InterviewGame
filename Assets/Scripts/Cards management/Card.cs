@@ -10,10 +10,12 @@ public class Card : MonoBehaviour
     public CardData CardData;
 
     private int clickCount = 0;
-    public Player Owner {get; private set;}
+    private bool isCardPlayed = false;
+    public Player Owner { get; private set; }
 
-    public void SetOwnerPlayer(Player player,Transform playerCardsParent ,int index)
+    public void SetOwnerPlayer(Player player, Transform playerCardsParent, int index)
     {
+        isCardPlayed = false;
         Owner = player;
         MoveToPlayerHand(player, playerCardsParent, index);
         transform.parent = playerCardsParent;
@@ -21,14 +23,27 @@ public class Card : MonoBehaviour
 
     public void PlayCard(Transform playPos)
     {
-        this.transform.DOMove(playPos.position, movementDuration)
-                      .onComplete+= ()=> GroundManager.Instance.AddCardToGround(this);
+        if(Owner is NPCPlayer)
+        {
+           Flip();
+        }
+        else
+        {
+            this.transform.DORotate(new Vector3(0, -90, this.transform.rotation.z), movementDuration);
+        }
+
+        this.transform.DOMove(playPos.position + (RoundManager.Instance.RoundCount-1) * 0.01f *Vector3.up, movementDuration)
+                      .onComplete += () => GroundManager.Instance.AddCardToGround(this);
+
+        isCardPlayed = true;
     }
+
     public void Flip()
     {
-        this.transform.localScale = new Vector3(this.transform.localScale.x, -this.transform.localScale.y, this.transform.localScale.z);
+        //this.transform.localScale = new Vector3(this.transform.localScale.x, -this.transform.localScale.y, this.transform.localScale.z);
+        this.transform.DOScaleY(-this.transform.localScale.y, movementDuration);
     }
-   
+
     public void Focus()
     {
         this.transform.DOScale(0.3f, 0.5f);
@@ -46,12 +61,15 @@ public class Card : MonoBehaviour
 
         //this.transform.DOMoveX(0.1f, (instant ? 0 : 0.5f));
     }
+
     private void MoveToPlayerHand(Player player, Transform playerCardsParent, int index)
     {
-        this.transform.DOMove(player.transform.position + index *  0.4f * playerCardsParent.forward + index * 0.05f * playerCardsParent.up, movementDuration);
+        this.transform.DOMove(player.transform.position + index * 0.4f * playerCardsParent.forward + index * 0.05f * playerCardsParent.up, movementDuration);
         this.transform.forward = -playerCardsParent.right;
-        if(player is UserPlayer)
+
+        if (player is UserPlayer)
         {
+            this.transform.DORotate(new Vector3(-37.71f, 270, 0), 0.3f); //by experiment this is the best view for player
             Flip();
         }
         Owner = player;
@@ -59,20 +77,13 @@ public class Card : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Owner is UserPlayer) //to prevent from clicking on other players' cards
+        if (isCardPlayed) return;
+
+        if (Owner is UserPlayer && RoundManager.Instance.IsUserTurn) //to prevent from clicking on other players' cards
         {
-            //clickCount++;
-            //if (clickCount >= 2)
-            {
-                //UnFocus(false);
-                StartCoroutine(Owner.PlayTurn(this));
-            }
-            //else
-            //{
-            //    (Owner as UserPlayer).FocusCard(this);
-            //}
+            RoundManager.Instance.SetIsUserTurn(false); //can't click again until next turn 
+            StartCoroutine(Owner.PlayTurn(this));
         }
-            
     }
 }
 

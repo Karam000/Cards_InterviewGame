@@ -24,8 +24,8 @@ public class GroundManager : MonoBehaviour
     }
     public void AddCardToGround(Card card)
     {
-        if(card.Owner is NPCPlayer) 
-           card.Flip();
+        //if(card.Owner is NPCPlayer) 
+        //   card.Flip();
 
         card.transform.parent = this.transform;
         GroundCards.Add(card);

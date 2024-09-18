@@ -7,12 +7,13 @@ public abstract class Player : MonoBehaviour
 {
     [SerializeField] Transform myCardsParent;
     [SerializeField] protected Transform playedCardsPosition;
+    public Transform EmojiPosition;
 
     public int Score { get; protected set; }
     public Card maxCard { get; protected set; }
-    public Transform EmojiPosition;
 
     protected List<Card> myCards = new();
+    protected int playCount = 0;
 
     public virtual void AddCardToHand(Card card)
     {

@@ -2,15 +2,31 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour, IParamObserver<IncrementScoreCommand, Player>
 {
     [SerializeField] PlayersUIList PlayersUIData;
+    [SerializeField] LevelEndPanel LevelEndPanel;
     public static UIManager Instance;
     private void Awake()
     {
         Instance = this;
+    }
+
+    public void ShowLevelEnd(Player player)
+    {
+        LevelEndPanel.Open(player.gameObject.name);
+    }
+
+    public void Restart() //called from restart button in inspector (not optimal)
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //very basic restart (not optimal)
+    }
+    public void Quit() //called from quit button in inspector (not optimal)
+    {
+        Application.Quit();  //very basic quit (not optimal)
     }
     public void OnNotify(IncrementScoreCommand incrementScoreCommand, Player player)
     {
@@ -19,24 +35,3 @@ public class UIManager : MonoBehaviour, IParamObserver<IncrementScoreCommand, Pl
     }
 }
 
-[Serializable]
-public class PlayerUIData
-{
-    public Player Player;
-    public Text scoreText;
-    public Text nameText;
-    public Image avatarImg;
-}
-
-[Serializable]
-public class PlayersUIList //just for custom indexing
-{
-    public List<PlayerUIData> PlayersUIData;
-    public PlayerUIData this[Player player]
-    {
-        get
-        {
-            return PlayersUIData.Find(x => x.Player == player);
-        }
-    }
-}

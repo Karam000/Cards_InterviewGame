@@ -57,11 +57,13 @@ public class LevelManager : MonoBehaviour
 
     private void EndLevel()
     {
+        RoundManager.Instance.EndGame();
         //determine winner
         AllPlayers.OrderBy((p) => p.Score);
         //celebrate winner
         GameFeelManager.Instance.CelebratePlayer(AllPlayers[0]);
         //ask for restart from UI manager
+        UIManager.Instance.ShowLevelEnd(AllPlayers[0]);
     }
     
 }
