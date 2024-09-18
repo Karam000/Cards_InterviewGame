@@ -3,8 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Utility class to rank/compare cards values
+/// </summary>
 public class CardRanker : MonoBehaviour
 {
+    /// <summary>
+    /// Get max card in a list 
+    /// </summary>
+    /// <param name="cards">list of cards to rank</param>
+    /// <returns>best card in the list</returns>
     public static Card GetMaxCard(List<Card> cards)
     {
         RankCards(ref cards);
@@ -16,6 +24,11 @@ public class CardRanker : MonoBehaviour
     //{
 
     //}
+
+    /// <summary>
+    /// order by number then suit
+    /// </summary>
+    /// <param name="cards"></param>
     private static void RankCards(ref List<Card> cards)
     {
         var orderedCards = cards

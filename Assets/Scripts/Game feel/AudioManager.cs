@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// Responsible for handling audio play/stop
+/// </summary>
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioSource AudioSource;
@@ -10,18 +14,34 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip cardWinAudio;
     [SerializeField] AudioClip playerWinAudio;
 
+    /// <summary>
+    /// cards dealing audio
+    /// </summary>
     public void PlayDealingAudio()
     {
         PlayAudio(cardDealAudio);
     }
+
+    /// <summary>
+    /// card play audio
+    /// </summary>
     public void PlayCardAudio()
     {
         PlayAudio(cardPlayAudio);
     }
+
+    /// <summary>
+    /// stop audio :)
+    /// </summary>
     public void StopAudio()
     {
         AudioSource.Stop();
     }
+
+    /// <summary>
+    /// celebration audio
+    /// </summary>
+    /// <param name="celebrationState">whether a player win(level end) or a card win</param>
     public void Celebrate(CelebrationStates celebrationState)
     {
         switch (celebrationState)
@@ -37,7 +57,10 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Play audio
+    /// </summary>
+    /// <param name="audioClip">the audio to be played</param>
     private void PlayAudio(AudioClip audioClip)
     {
         AudioSource.Stop();

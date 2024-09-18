@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// responsible for visual effects required by GameFeelManager
+/// </summary>
 public class VisualManager : MonoBehaviour
 {
     [SerializeField] private List<ParticleSystem> WinParticle;
@@ -10,6 +13,12 @@ public class VisualManager : MonoBehaviour
     [SerializeField] private NPCEmotionList NPCEmotionList;
 
     bool isPlayingEmoji = false;
+
+    /// <summary>
+    /// Play celebration particle according to state
+    /// </summary>
+    /// <param name="celebarationState">player win(level end) or card win</param>
+    /// <param name="position">where to play the particle (typically the winning card position)</param>
     public void PlayCelebrationParticle(CelebrationStates celebarationState, Vector3 position)
     {
         List<ParticleSystem> particleSystems = DetermineParticleSystem(celebarationState);
@@ -25,6 +34,14 @@ public class VisualManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Randomize play an emoji based on thinking time.
+    /// <br>it would be better to decide the emoji based on the cards in hand and on the ground but I just</br>
+    /// <br>but I just went with this simple approch as a proof of concept.</br>
+    /// </summary>
+    /// <param name="thinkingTime">The time taken by the NPC to think</param>
+    /// <param name="player">the NPC on whick the emoji will be shown</param>
+    /// <param name="emojiPlayPercentage">a percentage used to fine tune frequency of showing emojis</param>
     public void PlayEmoji_Random(float thinkingTime, Player player, float emojiPlayPercentage)
     {
         if (isPlayingEmoji) return;
@@ -50,6 +67,11 @@ public class VisualManager : MonoBehaviour
         ShowEmojiSprite(EmotionSprites[Random.Range(0, EmotionSprites.Count)], player);
     }
 
+    /// <summary>
+    /// show and animate emoji sprite
+    /// </summary>
+    /// <param name="emoji">the emoji to be shown</param>
+    /// <param name="player">the NPC to show the emoji on</param>
     private void ShowEmojiSprite(GameObject emoji, Player player)
     {
         isPlayingEmoji = true;
@@ -68,6 +90,11 @@ public class VisualManager : MonoBehaviour
                        };
     }
 
+    /// <summary>
+    /// determine whick particle to be played according to the state
+    /// </summary>
+    /// <param name="celebarationState">player win(level end) or card win</param>
+    /// <returns>particle system to be played in this state</returns>
     private List<ParticleSystem> DetermineParticleSystem(CelebrationStates celebarationState)
     {
         switch (celebarationState)

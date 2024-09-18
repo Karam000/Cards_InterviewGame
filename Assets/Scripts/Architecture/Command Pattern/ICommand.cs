@@ -1,5 +1,9 @@
 using System.Collections.Generic;
 
+/// <summary>
+/// Base class for Commands. Has a list of IObservers that need to subscribe to the command being excuted
+/// </summary>
+/// <typeparam name="T">command type</typeparam>
 public abstract class ICommand<T>
 {
     protected List<IObserver<T>> Observers = new();
@@ -17,6 +21,12 @@ public abstract class ICommand<T>
         }
     }
 }
+
+/// <summary>
+/// Parameterized command
+/// </summary>
+/// <typeparam name="T">command type</typeparam>
+/// <typeparam name="T1">parameter type</typeparam>
 public abstract class IParamCommand<T,T1>
 {
     protected List<IParamObserver<T,T1>> Observers = new();

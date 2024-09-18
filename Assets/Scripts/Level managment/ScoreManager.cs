@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Responsible for handling score operations (simply invokes a command)
+/// </summary>
 public class ScoreManager : MonoBehaviour
 {
     IncrementScoreCommand IncrementScoreCommand = new();

@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Reasponsible for handling players operations as a whole
+/// </summary>
 public class PlayersManager : MonoBehaviour, IObserver<StartTurnCommand>, IObserver<EndTurnCommand>
 {
     [SerializeField] List<Player> Players;
-    [SerializeField] GameObject Arrow;
+    [SerializeField] GameObject Arrow; //visual indicator for current player
     [SerializeField] Material ArrowMaterial;
     [SerializeField] List<Color> ArrowColors;
 
@@ -23,12 +26,21 @@ public class PlayersManager : MonoBehaviour, IObserver<StartTurnCommand>, IObser
     }
 
     #region Utility for Dealing
+
+    /// <summary>
+    /// set starting player randomly
+    /// </summary>
     public void RandomizeFirstPlayer()
     {
-        startingPlayerId = 0; //just for testing// Random.Range(0, Players.Count); //exclusive so will be max: count-1
+        startingPlayerId = Random.Range(0, Players.Count); //exclusive so will be max: count-1
         currentPlayer = Players[startingPlayerId];
     }
 
+    /// <summary>
+    /// get the next player in CCW order
+    /// </summary>
+    /// <param name="index">index(from a loop) of next player</param>
+    /// <returns></returns>
     public Player GetPlayerCCW(int index)
     {
         return Players[(startingPlayerId + index) % Players.Count];
@@ -36,22 +48,36 @@ public class PlayersManager : MonoBehaviour, IObserver<StartTurnCommand>, IObser
 
     #endregion
 
+    /// <summary>
+    /// called when a turn starts
+    /// </summary>
+    /// <param name="startTurnCommand"></param>
     public void OnNotify(StartTurnCommand startTurnCommand)
     {
         PlayCurrentTurn();
     }
 
+    /// <summary>
+    /// called when a turn ends
+    /// </summary>
+    /// <param name="endTurnCommand"></param>
     public void OnNotify(EndTurnCommand endTurnCommand)
     {
         UpdateCurrentPlayer();
     }
 
+    /// <summary>
+    /// Update the player whose turn is active
+    /// </summary>
     private void UpdateCurrentPlayer()
     {
         currentPlayer = Players[(++currentPlayerId) % Players.Count];
-        //maybe add visual for current player ??
+        //maybe add visual for current player ?? (done :) )
     }
 
+    /// <summary>
+    /// Play current player trun and show arrow indicator
+    /// </summary>
     private void PlayCurrentTurn()
     {
         if (currentPlayer is NPCPlayer)

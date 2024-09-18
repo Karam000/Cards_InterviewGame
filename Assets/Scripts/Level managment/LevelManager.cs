@@ -4,6 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// This is the whole level manager. Responsible for routing the whole game operation, calling score and UI 
+/// <br>operations, starting and ending the level and game feel operations</br>
+/// </summary>
+
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] Dealer Dealer;
@@ -25,10 +30,24 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator Start()
     {
+
+        //shuffle cards
         Deck.ShuffleCardS();
+
+        //wait for shuffle then start dealing in CCW order
         yield return StartCoroutine(Dealer.DealCards(Deck));
+
+        //start the first round
         RoundManager.Instance.StartRound();
     }
+
+    /// <summary>
+    /// end round:
+    /// <br>1. get best played card</br>
+    /// <br>2. celebrate the best card</br>
+    /// <br>3. give point the best card's owner</br>
+    /// <br>4. determine next step (another round or level end)</br>
+    /// </summary>
     public void EndRound()
     {
         //determine max card
@@ -55,6 +74,12 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// end level:
+    /// <br>1. determine winner player</br>
+    /// <br>2. celebrate winner</br>
+    /// <br>3. show level end UI</br>
+    /// </summary>
     private void EndLevel()
     {
         RoundManager.Instance.EndGame();

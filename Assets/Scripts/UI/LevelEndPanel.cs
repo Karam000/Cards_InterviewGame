@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// A simple class that represents the level end panel and handles its simple operation
+/// </summary>
 public class LevelEndPanel : MonoBehaviour
 {
     [SerializeField] Text PlayerWinsText;

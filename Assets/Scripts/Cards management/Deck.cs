@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Responsible for handling cards as a whole stack
+/// </summary>
 public class Deck : MonoBehaviour
 {
     [SerializeField] private List<Card> CardsList; //just to serialize in the inspector
@@ -18,6 +21,9 @@ public class Deck : MonoBehaviour
         CardsListToStack();
     }
 
+    /// <summary>
+    /// convert the inspector CardsList to stack for easier programmatic operations
+    /// </summary>
     private void CardsListToStack()
     {
         //I don't like this and may eventually decide to just use the list
@@ -28,7 +34,16 @@ public class Deck : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Pops a card from the cards stack
+    /// </summary>
+    /// <returns></returns>
     public Card PopCard() => Cards.Pop();
+
+
+    /// <summary>
+    /// visual for organizing the cards on top of each other
+    /// </summary>
 
     [ContextMenu("Organize in a deck form")]
     private void OrganizeCards()
@@ -39,6 +54,10 @@ public class Deck : MonoBehaviour
         }
     }
 
+
+    /// <summary>
+    /// Shuffle the cards at the beginning of every run
+    /// </summary>
     [ContextMenu("Shuffle")]
     public void ShuffleCardS()
     {
@@ -63,6 +82,10 @@ public class Deck : MonoBehaviour
         CardsListToStack();
     }
 
+
+    /// <summary>
+    /// Animate cards shuffling
+    /// </summary>
     private void ShuffleAnimation()
     {
         isShuffled = false;

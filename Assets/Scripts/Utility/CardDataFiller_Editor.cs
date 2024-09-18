@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Utiltiy class for filling and setting cards data automatedly
+/// </summary>
 public class CardDataFiller_Editor : MonoBehaviour
 {
     [SerializeField] private List<Card> cards;

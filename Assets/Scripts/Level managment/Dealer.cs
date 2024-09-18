@@ -2,10 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Responsible for the dealing mechanism in CCW order
+/// </summary>
 public class Dealer : MonoBehaviour
 {
     [SerializeField] float dealingDelay = 0.1f;
     
+    /// <summary>
+    /// Deal cards in CCW order
+    /// </summary>
+    /// <param name="deck">The deck object containing all cards</param>
+    /// <returns></returns>
     public IEnumerator DealCards(Deck deck)
     {
         PlayersManager.Instance.RandomizeFirstPlayer(); 
