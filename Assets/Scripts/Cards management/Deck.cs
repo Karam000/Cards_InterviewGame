@@ -5,9 +5,14 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
-    [SerializeField] List<Card> CardsList; //just to serialize in the inspector
+    [SerializeField] private List<Card> CardsList; //just to serialize in the inspector
+    [SerializeField] private float shuffleDuration = 1.0f;
+    [SerializeField] private float shuffleDistance = 2.0f; // How far the cards move during the shuffle
 
     public Stack<Card> Cards = new(); //better to simulate real behavior as we only need to pop the top most card
+
+    private bool isShuffled;
+
     private void Start()
     {
         CardsListToStack();
@@ -28,9 +33,9 @@ public class Deck : MonoBehaviour
     [ContextMenu("Organize in a deck form")]
     private void OrganizeCards()
     {
-        for (int i = CardsList.Count-1; i >0; i--)
+        for (int i = CardsList.Count - 1; i > 0; i--)
         {
-            CardsList[i].transform.position = this.transform.position + ((CardsList.Count-1-i) * 0.01f * Vector3.up);
+            CardsList[i].transform.position = this.transform.position + ((CardsList.Count - 1 - i) * 0.01f * Vector3.up);
         }
     }
 
@@ -54,8 +59,33 @@ public class Deck : MonoBehaviour
             CardsList[k] = temp;
         }
         OrganizeCards();
+        //ShuffleAnimation(); >>> not working for some reason
         CardsListToStack();
     }
-    
 
+    private void ShuffleAnimation()
+    {
+        isShuffled = false;
+
+        Vector3[] originalPositions = new Vector3[CardsList.Count];
+
+        for (int i = 0; i < CardsList.Count; i++)
+        {
+            originalPositions[i] = new Vector3(CardsList[i].transform.position.x, CardsList[i].transform.position.y, CardsList[i].transform.position.z);
+            Vector3 randomPosition = originalPositions[i] + new Vector3(
+                Random.Range(-shuffleDistance, shuffleDistance),
+                0,
+                Random.Range(-shuffleDistance, shuffleDistance));
+
+            // Move card to a random position
+            CardsList[i].transform.DOMove(randomPosition, shuffleDuration / 2)
+                .onComplete += () =>
+                {
+                    print("Card got to random");
+                    // Move card back to its original position
+                    CardsList[i].transform.DOMove(originalPositions[i], shuffleDuration / 2)
+                       .OnComplete(() => isShuffled = true);
+                };
+        }
+    }
 }
