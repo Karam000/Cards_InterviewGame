@@ -18,7 +18,9 @@ public class VisualManager : MonoBehaviour
 
         foreach (var particleSystem in particleSystems)
         {
+            if(particleSystems == MaxCardParticle)
             particleSystem.gameObject.transform.position = position;
+
             particleSystem.gameObject.SetActive(true);
         }
     }
@@ -33,8 +35,9 @@ public class VisualManager : MonoBehaviour
         if (Random.Range(0, 100) < emojiPlayPercentage)
             return;
 
-        List<GameObject> EmotionSprites = validEmotions[Random.Range(0, validEmotions.Count)].EmotionSprites;
+        List<GameObject> EmotionSprites = validEmotions[Random.Range(0, validEmotions.Count)]?.EmotionSprites;
 
+        if(EmotionSprites == null || EmotionSprites.Count == 0) return;
         ShowEmojiSprite(EmotionSprites[Random.Range(0, EmotionSprites.Count)], player);
     }
 

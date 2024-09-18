@@ -10,11 +10,13 @@ public class Dealer : MonoBehaviour
     {
         PlayersManager.Instance.RandomizeFirstPlayer(); 
         int i = 0;
+        GameFeelManager.Instance.PlayDealingAudio();
         while (deck.Cards.Count > 0)
         {
             PlayersManager.Instance.GetPlayerCCW(i).AddCardToHand(deck.PopCard()); //deal cards (card by card from the deck) in ccw order
             yield return new WaitForSeconds(dealingDelay);
             i++;
         }
+        GameFeelManager.Instance.StopAudio();
     }
 }

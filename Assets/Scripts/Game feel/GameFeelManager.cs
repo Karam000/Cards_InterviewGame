@@ -1,15 +1,15 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameFeelManager : MonoBehaviour
 {
-    [SerializeField] VisualManager VisualManager;
-    [SerializeField] AudioManager AudioManager;
-    [SerializeField] float NPCEmojiPercentage;
+    [SerializeField] private VisualManager VisualManager;
+    [SerializeField] private AudioManager AudioManager;
+    [SerializeField] private float NPCEmojiPercentage;
 
     public static GameFeelManager Instance;
+
     private void Awake()
     {
         if (Instance == null)
@@ -17,14 +17,31 @@ public class GameFeelManager : MonoBehaviour
         else
             Destroy(gameObject);
     }
-   
+
+    public void PlayDealingAudio()
+    {
+        AudioManager.PlayDealingAudio();
+    }
+
+    public void StopAudio()
+    { 
+        AudioManager.StopAudio();
+    }
+
+    public void PlayCardAudio()
+    {
+        AudioManager.PlayCardAudio();
+    }
     public void CelebrateCard(Card card)
     {
-        VisualManager.PlayCelebrationParticle(CelebrationStates.MaxCard,card.transform.position);
+        VisualManager.PlayCelebrationParticle(CelebrationStates.MaxCard, card.transform.position);
+        AudioManager.Celebrate(CelebrationStates.MaxCard);
     }
+
     public void CelebratePlayer(Player player)
     {
         VisualManager.PlayCelebrationParticle(CelebrationStates.PlayerWin, player.transform.position);
+        AudioManager.Celebrate(CelebrationStates.PlayerWin);
     }
 
     public float SimulateNPCThinking(Player npcPlayer)
@@ -35,11 +52,12 @@ public class GameFeelManager : MonoBehaviour
 
         return thinkingTime;
     }
+
     //private void SetNPCEmotion(Player npcPlayer)
     //{
     //    Card maxPlayedCard = GroundManager.Instance.GetMaxPlayedCard();
     //}
-    private void PlayRandomEmoji(float thinkingTime,Player npcPlayer)
+    private void PlayRandomEmoji(float thinkingTime, Player npcPlayer)
     {
         VisualManager.PlayEmoji_Random(thinkingTime, npcPlayer, NPCEmojiPercentage);
     }
@@ -57,6 +75,7 @@ public class NPCEmotion
 public class NPCEmotionList
 {
     public List<NPCEmotion> NPCEmotions;
+
     public List<NPCEmotion> this[float thinkingTime]
     {
         get

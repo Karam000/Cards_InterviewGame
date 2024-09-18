@@ -32,6 +32,7 @@ public class Card : MonoBehaviour
             this.transform.DORotate(new Vector3(0, -90, this.transform.rotation.z), movementDuration);
         }
 
+        GameFeelManager.Instance.PlayCardAudio();
         this.transform.DOMove(playPos.position + (RoundManager.Instance.RoundCount-1) * 0.01f *Vector3.up, movementDuration)
                       .onComplete += () => GroundManager.Instance.AddCardToGround(this);
 
